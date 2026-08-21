@@ -102,3 +102,42 @@ Known limits:
 - `datasheet.md`: dataset documentation
 - `LICENSES.md`: dataset licence notes
 - `notebooks/01_eda.ipynb`: starter EDA notebook
+
+## Phase 2 Vision Files
+
+Phase 2 builds a chest X-ray vision model that predicts six disease probabilities:
+
+- `Cardiomegaly`
+- `Atelectasis`
+- `Consolidation / Pneumonia`
+- `Pleural Effusion`
+- `Edema`
+- `Pneumothorax`
+
+The model does not directly output `No Finding` or `Other`.
+
+- `src/models/dataset.py`: loads the manifest, images, and 6-label targets
+- `src/models/baseline.py`: runs the torchxrayvision pretrained baseline
+- `src/models/model.py`: builds DenseNet-121 with a 6-output head
+- `src/models/train.py`: overfit-20 check and optional full fine-tuning
+- `src/models/evaluate.py`: study-level metrics and validation thresholds
+- `src/models/predict.py`: `predict_findings(image_path)` tool
+- `PHASE2.md`: final Phase 2 result report
+
+Useful commands:
+
+```bash
+python -m src.models.baseline
+python -m src.models.train
+python -m src.models.train --full-train
+python -m src.models.predict data/processed/images_224/1_IM-0001-4001.dcm.png
+```
+
+Final Phase 2 result:
+
+- baseline macro AUROC on supported labels: about `0.885`
+- fine-tuned macro AUROC on supported labels: about `0.874`
+- fine-tune improved Atelectasis AP: `0.305` to `0.408`
+- Edema and Pneumothorax are data-limited because the test split has very few positives
+
+Short conclusion: the domain-pretrained baseline is slightly stronger overall, but the fine-tuned model is competitive and gives a useful honest benchmark.
