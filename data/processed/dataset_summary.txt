@@ -1,0 +1,16 @@
+MediScope Phase 1 Dataset Summary
+rows/images: 3791
+patients/studies: 3666
+splits: {'train': 2653, 'val': 574, 'test': 564}
+max splits per patient: 1
+
+label counts:
+labels
+Other                        1671
+No Finding                   1362
+Cardiomegaly                  330
+Atelectasis                   308
+Consolidation / Pneumonia     197
+Pleural Effusion              147
+Edema                          44
+Pneumothorax                   23

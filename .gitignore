@@ -8,4 +8,16 @@ wheels/
 
 # Virtual environments
 .venv
-data/
+
+# Dataset files
+data/images/
+data/raw/
+data/interim/
+data/processed/images_224/
+data/*.csv
+
+# Keep the small final dataset artifacts if you choose to commit them.
+!data/processed/
+!data/processed/manifest.parquet
+!data/processed/split_label_counts.csv
+!data/processed/dataset_summary.txt

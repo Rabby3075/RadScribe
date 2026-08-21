@@ -1,0 +1,25 @@
+split,labels,count
+test,Atelectasis,47
+test,Cardiomegaly,45
+test,Consolidation / Pneumonia,30
+test,Edema,2
+test,No Finding,210
+test,Other,243
+test,Pleural Effusion,23
+test,Pneumothorax,3
+train,Atelectasis,217
+train,Cardiomegaly,228
+train,Consolidation / Pneumonia,138
+train,Edema,35
+train,No Finding,932
+train,Other,1189
+train,Pleural Effusion,106
+train,Pneumothorax,17
+val,Atelectasis,44
+val,Cardiomegaly,57
+val,Consolidation / Pneumonia,29
+val,Edema,7
+val,No Finding,220
+val,Other,239
+val,Pleural Effusion,18
+val,Pneumothorax,3
