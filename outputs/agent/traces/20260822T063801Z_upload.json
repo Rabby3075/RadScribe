@@ -1,0 +1,222 @@
+{
+  "image_path": "C:\\Users\\rashe\\AppData\\Local\\Temp\\radscribe_qf1flr2v\\upload.png",
+  "question": null,
+  "guardrail_passed": true,
+  "guardrail_reason": "input image file is readable",
+  "vision_predictions": [
+    {
+      "finding": "Cardiomegaly",
+      "probability": 0.8572808504104614
+    },
+    {
+      "finding": "Pleural Effusion",
+      "probability": 0.7488554120063782
+    },
+    {
+      "finding": "Pneumothorax",
+      "probability": 0.468195378780365
+    },
+    {
+      "finding": "Atelectasis",
+      "probability": 0.45369479060173035
+    },
+    {
+      "finding": "Consolidation / Pneumonia",
+      "probability": 0.36763617396354675
+    },
+    {
+      "finding": "Edema",
+      "probability": 0.3632257878780365
+    }
+  ],
+  "main_findings": [
+    "Cardiomegaly",
+    "Pleural Effusion"
+  ],
+  "borderline_findings": [],
+  "retrieval_findings": [
+    "Cardiomegaly",
+    "Pleural Effusion"
+  ],
+  "vision_status": "high_confidence",
+  "evidence": [
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "main",
+      "vision_probability": 0.8572808504104614,
+      "rank": 1,
+      "chunk_id": "cardiomegaly_001",
+      "text": "The finding matters because an enlarged cardiac silhouette can be a clue that the heart is under strain or not pumping normally. Heart failure can cause symptoms such as tiredness, shortness of breath, and fluid buildup in the body, although the exact cause cannot be decided from a chest X-ray alone. On a chest X-ray, cardiomegaly is usually considered when the cardiac silhouette is larger than expected compared with the chest. A common measurement is the cardiothoracic ratio on a PA chest radiograph; a ratio above about 50 percent can suggest enlargement.",
+      "finding": "Cardiomegaly",
+      "score": 0.7477215528488159,
+      "distance": 0.2522784471511841,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "main",
+      "vision_probability": 0.8572808504104614,
+      "rank": 2,
+      "chunk_id": "cardiomegaly_002",
+      "text": "A common measurement is the cardiothoracic ratio on a PA chest radiograph; a ratio above about 50 percent can suggest enlargement. Portable AP views can exaggerate heart size, so the report should describe the finding carefully and consider image technique. Cardiomegaly should be reported as an imaging observation, not as a full diagnosis. Follow-up with clinical history, prior imaging, echocardiography, or other tests may be needed to understand the cause.",
+      "finding": "Cardiomegaly",
+      "score": 0.7098684906959534,
+      "distance": 0.29013150930404663,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "main",
+      "vision_probability": 0.8572808504104614,
+      "rank": 3,
+      "chunk_id": "cardiomegaly_000",
+      "text": "Cardiomegaly means the heart appears enlarged. It is not a single disease by itself; it is a finding that can happen when the heart has changed because of another condition. Common associated problems can include high blood pressure, heart valve disease, coronary artery disease, cardiomyopathy, or heart failure. The finding matters because an enlarged cardiac silhouette can be a clue that the heart is under strain or not pumping normally.",
+      "finding": "Cardiomegaly",
+      "score": 0.7052236795425415,
+      "distance": 0.2947763204574585,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Pleural Effusion",
+      "confidence_group": "main",
+      "vision_probability": 0.7488554120063782,
+      "rank": 1,
+      "chunk_id": "pleural_effusion_002",
+      "text": "On chest X-ray, pleural effusion is usually considered when there is abnormal fluid at the lung base or in the pleural space. It may appear with blunting of the costophrenic angle, dependent layering fluid, or a horizontal air-fluid level if both air and fluid are present. Lateral decubitus views can show smaller amounts of fluid than an upright chest X-ray. Pleural effusion matters because it can reduce lung expansion and may be associated with shortness of breath, chest pain, or cough.",
+      "finding": "Pleural Effusion",
+      "score": 0.7357231378555298,
+      "distance": 0.2642768621444702,
+      "provider": "openai",
+      "source_ids": [
+        "pleural_effusion_nhlbi",
+        "pleural_effusion_wikipedia"
+      ],
+      "source_titles": [
+        "Pleural Disorders - Pleurisy, Pleural Effusion, and Pneumothorax",
+        "Pleural effusion"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/pleural-disorders/types",
+        "https://en.wikipedia.org/wiki/Pleural_effusion"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Pleural Effusion",
+      "confidence_group": "main",
+      "vision_probability": 0.7488554120063782,
+      "rank": 2,
+      "chunk_id": "pleural_effusion_003",
+      "text": "Pleural effusion matters because it can reduce lung expansion and may be associated with shortness of breath, chest pain, or cough. The report should describe the imaging finding carefully without pretending to know the exact cause from the X-ray alone.",
+      "finding": "Pleural Effusion",
+      "score": 0.6887479424476624,
+      "distance": 0.31125205755233765,
+      "provider": "openai",
+      "source_ids": [
+        "pleural_effusion_nhlbi",
+        "pleural_effusion_wikipedia"
+      ],
+      "source_titles": [
+        "Pleural Disorders - Pleurisy, Pleural Effusion, and Pneumothorax",
+        "Pleural effusion"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/pleural-disorders/types",
+        "https://en.wikipedia.org/wiki/Pleural_effusion"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Pleural Effusion",
+      "confidence_group": "main",
+      "vision_probability": 0.7488554120063782,
+      "rank": 3,
+      "chunk_id": "pleural_effusion_001",
+      "text": "Inflammatory causes, infection, tumors, or lung injury can lead to an exudative effusion. Pressure-related causes, such as heart, kidney, or liver failure, can lead to a transudative effusion. The cause matters because the same X-ray finding can come from different underlying problems. On chest X-ray, pleural effusion is usually considered when there is abnormal fluid at the lung base or in the pleural space.",
+      "finding": "Pleural Effusion",
+      "score": 0.6268494129180908,
+      "distance": 0.3731505870819092,
+      "provider": "openai",
+      "source_ids": [
+        "pleural_effusion_nhlbi",
+        "pleural_effusion_wikipedia"
+      ],
+      "source_titles": [
+        "Pleural Disorders - Pleurisy, Pleural Effusion, and Pneumothorax",
+        "Pleural effusion"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/pleural-disorders/types",
+        "https://en.wikipedia.org/wiki/Pleural_effusion"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    }
+  ],
+  "best_retrieval_score": 0.7477215528488159,
+  "retrieval_ok": true,
+  "can_draft": true,
+  "draft_report": "**Findings:**  \nModel suggests cardiomegaly, indicated by an enlarged cardiac silhouette, which may reflect underlying heart strain or dysfunction. Additionally, possible pleural effusion is noted, characterized by abnormal fluid at the lung base, which may impact lung expansion and is associated with symptoms such as shortness of breath or chest pain.\n\n**Impression:**  \n- Cardiomegaly may represent underlying cardiac issues.  \n- Pleural effusion is possible and may require further evaluation.\n\n**Evidence:** (cardiomegaly_001, pleural_effusion_002)",
+  "critic_result": {
+    "supported": true,
+    "missing_evidence": [],
+    "safety_note": "All findings in the draft are supported by the evidence provided."
+  },
+  "final_report": "**Findings:**  \nModel suggests cardiomegaly, indicated by an enlarged cardiac silhouette, which may reflect underlying heart strain or dysfunction. Additionally, possible pleural effusion is noted, characterized by abnormal fluid at the lung base, which may impact lung expansion and is associated with symptoms such as shortness of breath or chest pain.\n\n**Impression:**  \n- Cardiomegaly may represent underlying cardiac issues.  \n- Pleural effusion is possible and may require further evaluation.\n\n**Evidence:** (cardiomegaly_001, pleural_effusion_002)\n\nEducational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+}

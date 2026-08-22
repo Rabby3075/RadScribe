@@ -1,0 +1,128 @@
+{
+  "image_path": "C:\\Users\\rashe\\AppData\\Local\\Temp\\radscribe_stxuzdm8\\upload.png",
+  "question": null,
+  "guardrail_passed": true,
+  "guardrail_reason": "input image file is readable",
+  "vision_predictions": [
+    {
+      "finding": "Atelectasis",
+      "probability": 0.5454654693603516
+    },
+    {
+      "finding": "Consolidation / Pneumonia",
+      "probability": 0.40966594219207764
+    },
+    {
+      "finding": "Cardiomegaly",
+      "probability": 0.3631214499473572
+    },
+    {
+      "finding": "Pneumothorax",
+      "probability": 0.3323673903942108
+    },
+    {
+      "finding": "Pleural Effusion",
+      "probability": 0.304949015378952
+    },
+    {
+      "finding": "Edema",
+      "probability": 0.023682044818997383
+    }
+  ],
+  "main_findings": [],
+  "borderline_findings": [
+    "Atelectasis"
+  ],
+  "retrieval_findings": [
+    "Atelectasis"
+  ],
+  "vision_status": "borderline",
+  "evidence": [
+    {
+      "query_finding": "Atelectasis",
+      "confidence_group": "borderline",
+      "vision_probability": 0.5454654693603516,
+      "rank": 1,
+      "chunk_id": "atelectasis_001",
+      "text": "Atelectasis can happen for several reasons, including airway blockage, compression from nearby fluid or air, shallow breathing, or postoperative changes. Small areas may cause few symptoms, while larger areas can be associated with shortness of breath, faster breathing, low oxygen, or reduced movement on the affected side. On chest X-ray, atelectasis is often considered when there is increased opacity together with signs of volume loss. Depending on the location, this may include crowding of nearby structures, elevation of the diaphragm, shift of fissures, or movement of the mediastinum toward the affected side.",
+      "finding": "Atelectasis",
+      "score": 0.636799693107605,
+      "distance": 0.363200306892395,
+      "provider": "openai",
+      "source_ids": [
+        "atelectasis_wikipedia"
+      ],
+      "source_titles": [
+        "Atelectasis"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Atelectasis"
+      ],
+      "licences": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Atelectasis",
+      "confidence_group": "borderline",
+      "vision_probability": 0.5454654693603516,
+      "rank": 2,
+      "chunk_id": "atelectasis_002",
+      "text": "Depending on the location, this may include crowding of nearby structures, elevation of the diaphragm, shift of fissures, or movement of the mediastinum toward the affected side. Atelectasis should be described as an imaging finding and interpreted with the clinical situation. A report should avoid assuming the exact cause unless the image or history clearly supports it.",
+      "finding": "Atelectasis",
+      "score": 0.5835543274879456,
+      "distance": 0.41644567251205444,
+      "provider": "openai",
+      "source_ids": [
+        "atelectasis_wikipedia"
+      ],
+      "source_titles": [
+        "Atelectasis"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Atelectasis"
+      ],
+      "licences": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Atelectasis",
+      "confidence_group": "borderline",
+      "vision_probability": 0.5454654693603516,
+      "rank": 3,
+      "chunk_id": "consolidation_pneumonia_002",
+      "text": "It may look denser or whiter than normal aerated lung. In pneumonia, the opacity may match the infected region, and air bronchograms can sometimes be seen when air-filled bronchi remain visible within surrounding opacified lung. Consolidation should be described as an imaging pattern and interpreted with symptoms, history, and other clinical information. The report should describe the opacity pattern and avoid claiming the organism or exact diagnosis from the X-ray alone.",
+      "finding": "Consolidation / Pneumonia",
+      "score": 0.5627721548080444,
+      "distance": 0.43722784519195557,
+      "provider": "openai",
+      "source_ids": [
+        "consolidation_pneumonia_cdc",
+        "consolidation_pneumonia_wikipedia"
+      ],
+      "source_titles": [
+        "About Pneumonia",
+        "Pulmonary consolidation"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/pneumonia/about/index.html",
+        "https://en.wikipedia.org/wiki/Pulmonary_consolidation"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    }
+  ],
+  "best_retrieval_score": 0.636799693107605,
+  "retrieval_ok": true,
+  "can_draft": false,
+  "draft_report": "Only borderline model findings were present. No main disease-specific report was generated.",
+  "critic_result": {
+    "supported": true,
+    "missing_evidence": [],
+    "safety_note": "No disease-specific claim was made."
+  },
+  "final_report": "Only borderline model findings were present. No main disease-specific report was generated.\n\nEducational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+}

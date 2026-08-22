@@ -10,12 +10,17 @@ tqdm
 ipywidgets
 torch==2.5.1+cu121; sys_platform == "win32"
 torchvision==0.20.1+cu121; sys_platform == "win32"
+torch==2.5.1; sys_platform != "win32"
+torchvision==0.20.1; sys_platform != "win32"
 torchxrayvision
 sentence-transformers
 openai
 chromadb
 python-dotenv
 langgraph
+fastapi
+uvicorn
+python-multipart
 
 # CUDA Torch install note:
 # Use this command on Windows/NVIDIA GPU machines:

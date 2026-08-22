@@ -17,11 +17,16 @@ dependencies = [
     "pillow>=12.3.0",
     "pyarrow>=25.0.1",
     "python-dotenv>=1.2.1",
+    "fastapi>=0.125.0",
     "scikit-learn>=1.7.2",
+    "uvicorn>=0.38.0",
+    "python-multipart>=0.0.20",
     "tqdm>=4.70.0",
     "sentence-transformers>=5.1.2",
     "torch==2.5.1+cu121 ; sys_platform == 'win32'",
     "torchvision==0.20.1+cu121 ; sys_platform == 'win32'",
+    "torch==2.5.1 ; sys_platform != 'win32'",
+    "torchvision==0.20.1 ; sys_platform != 'win32'",
     "torchxrayvision>=1.5.2",
 ]
 

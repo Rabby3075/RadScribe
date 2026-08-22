@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from openai import OpenAI
-from PIL import Image, UnidentifiedImageError
+from PIL import Image, ImageStat, UnidentifiedImageError
 
 from src.agent.state import AgentState
 from src.models.predict import predict_findings
@@ -54,6 +54,24 @@ def with_disclaimer(text: str) -> str:
     return f"{text}\n\n{DISCLAIMER}".strip()
 
 
+def _looks_like_plain_radiograph(image_path: Path) -> tuple[bool, str]:
+    with Image.open(image_path) as image:
+        rgb = image.convert("RGB").resize((128, 128))
+
+    hsv = rgb.convert("HSV")
+    saturation = ImageStat.Stat(hsv).mean[1] / 255
+    rgb_means = ImageStat.Stat(rgb).mean
+    channel_gap = max(rgb_means) - min(rgb_means)
+
+    if saturation > 0.12 or channel_gap > 18:
+        return (
+            False,
+            "Input image looks too colorful for a chest X-ray. Please upload a grayscale chest radiograph.",
+        )
+
+    return True, "input image is readable and looks like a grayscale radiograph"
+
+
 def guardrail_node(state: AgentState) -> AgentState:
     image_path = Path(state["image_path"])
     if not image_path.exists():
@@ -80,10 +98,18 @@ def guardrail_node(state: AgentState) -> AgentState:
             "guardrail_reason": f"Input is not a readable image: {exc}",
         }
 
+    looks_ok, reason = _looks_like_plain_radiograph(image_path)
+    if not looks_ok:
+        return {
+            **state,
+            "guardrail_passed": False,
+            "guardrail_reason": reason,
+        }
+
     return {
         **state,
         "guardrail_passed": True,
-        "guardrail_reason": "input image file is readable",
+        "guardrail_reason": reason,
     }
 
 

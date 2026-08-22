@@ -1,102 +1,127 @@
-# RadScribe / MediScope
+# RadScribe
 
-RadScribe is an educational chest X-ray AI project that builds a clean dataset pipeline, trains/evaluates vision baselines, and exposes a small `predict_findings(image_path)` tool for disease probabilities.
+**An educational, multimodal, agentic chest X-ray reporting assistant.** RadScribe reads a chest X-ray, retrieves reference evidence, drafts a cautious report grounded in that evidence, checks its own claims, and stays silent when it is not confident. It was built end to end: dataset, vision model, retrieval, agent, and a full quantitative evaluation.
 
-Important: this is **not a medical device**. It is **not for diagnosis** and must not be used for real patient care. The goal is to learn data engineering, multimodal AI, and honest model evaluation using public, de-identified data.
+> **Not a medical device. Not for diagnosis or patient care.** RadScribe is a research and learning project built on public, de-identified data. Every output carries a disclaimer, and the system is designed to defer to a human rather than make decisions.
 
-## Phase 2 Headline
+Live demo (local): a FastAPI app with an upload page that shows the report, the findings, the confidence, and the evidence behind each call.
 
-The strongest result is the Phase 2 vision benchmark. A domain-pretrained torchxrayvision baseline slightly beats the local fine-tuned model overall, but the fine-tuned model is competitive and improves Atelectasis Average Precision.
+---
 
-Study-level test results:
+## What it does
 
-| label | positives | baseline AUROC | baseline AP | fine-tuned AUROC | fine-tuned AP | note |
-|---|---:|---:|---:|---:|---:|---|
-| Cardiomegaly | 44 | 0.896 | 0.424 | 0.888 | 0.421 | supported |
-| Atelectasis | 44 | 0.816 | 0.305 | 0.826 | 0.408 | supported |
-| Consolidation / Pneumonia | 28 | 0.895 | 0.294 | 0.878 | 0.213 | supported |
-| Pleural Effusion | 22 | 0.931 | 0.706 | 0.906 | 0.530 | supported |
-| Edema | 2 | 0.553 | 0.169 | 0.772 | 0.032 | data-limited |
-| Pneumothorax | 3 | 0.329 | 0.006 | 0.603 | 0.011 | data-limited |
+```
+chest X-ray  ->  guardrail  ->  vision model (findings + confidence)
+             ->  gate: report only findings the model is confident about
+             ->  retrieve reference evidence (cited)
+             ->  draft a cautious report, grounded in that evidence
+             ->  critic checks every claim against the evidence
+             ->  report, or abstain when confidence is low
+```
 
-Macro AUROC on the four supported labels:
+The point of the project is not a high accuracy number. It is a system that knows the limits of its own model, cites what it says, and refuses when the evidence is weak. The final evaluation is reported honestly, including where it falls short.
 
-- baseline: about `0.885`
-- fine-tuned: about `0.874`
+---
 
-Edema and Pneumothorax are marked data-limited because the test split has only 2 and 3 positive studies.
+## Headline results
 
-## Quick Run
+**Vision (Phase 2), study-level test set.** A domain-pretrained baseline was benchmarked against a fine-tuned DenseNet-121. The baseline edges the fine-tune overall on limited data, and the fine-tune wins on Atelectasis average precision.
 
-Run prediction on one cleaned image:
+| Finding | Baseline AUROC | Fine-tuned AUROC | Note |
+|---|---:|---:|---|
+| Pleural Effusion | 0.931 | 0.906 | supported |
+| Cardiomegaly | 0.896 | 0.888 | supported |
+| Consolidation / Pneumonia | 0.895 | 0.878 | supported |
+| Atelectasis | 0.816 | 0.826 | supported |
+| Edema | 0.553 | 0.772 | data-limited (2 test cases) |
+| Pneumothorax | 0.329 | 0.603 | data-limited (3 test cases) |
+
+Macro AUROC on the four supported findings: baseline ~0.885, fine-tuned ~0.874.
+
+**Retrieval (Phase 3).** A licence-checked knowledge base of six findings, embedded in Chroma (cosine). Recall@3 ~0.92, MRR ~0.80, with a ~0.38 relevance threshold that separates in-scope from out-of-scope queries. Local MiniLM and OpenAI embeddings tied on recall.
+
+**End-to-end agent (Phase 5), 550 test studies.**
+
+| Metric | Value |
+|---|---:|
+| Sensitivity | 0.617 |
+| Specificity | 0.869 |
+| False-report rate | 0.131 |
+| Retrieval-OK on drafted cases | 1.000 |
+| Disclaimer on every output | 1.000 |
+
+The honest takeaway: the safety wrapper works well (grounding, abstention, self-check, disclaimer), and the bottleneck is the vision model. When the classifier is confidently wrong, the agent can still draft the wrong finding. Better wording around a weak model does not fix a weak model.
+
+---
+
+## How it is built
+
+| Phase | What it delivers |
+|---|---|
+| 1. Dataset | Curated 3,791 chest X-rays / 3,666 studies from the Indiana University set. Patient-level splits with zero leakage, a datasheet, and a manual label audit (~90% agreement). |
+| 2. Vision | Fine-tuned DenseNet-121 vs a pretrained baseline, per-class study-level AUROC/AP, honest data-limited flags. `predict_findings(image)` tool. |
+| 3. Retrieval | Licence-gated knowledge base from public-domain and CC-BY-SA sources, Chroma cosine index, `retrieve(query, k)` tool, measured relevance threshold. |
+| 4. Agent | A LangGraph agent (guardrail, vision, retrieve, draft, critic, gate) that grounds claims, abstains, catches an induced hallucination, and logs a trace per run. |
+| 5. Evaluation | The full agent scored across 550 studies: sensitivity, specificity, false-report rate, per-finding precision/recall, and a traced diagnosis of the bottleneck. |
+| 6. Deploy | A FastAPI service and a small upload UI, packaged for local Docker. Disclaimer visible on every output. |
+
+Each phase has its own write-up: `datasheet.md`, `PHASE2.md`, `PHASE3.md`, `PHASE4.md`, `PHASE5.md`, `PHASE6.md`.
+
+---
+
+## Tech stack
+
+Python, PyTorch, torchxrayvision, scikit-learn, LangGraph, LangChain, Chroma, sentence-transformers, OpenAI API (gpt-4o-mini), FastAPI, Docker, pandas.
+
+---
+
+## Run it
+
+Analyze one image from the command line:
 
 ```bash
 python -m src.models.predict data/processed/images_224/1_IM-0001-4001.dcm.png
 ```
 
-The tool returns probabilities for six disease labels:
-
-- `Cardiomegaly`
-- `Atelectasis`
-- `Consolidation / Pneumonia`
-- `Pleural Effusion`
-- `Edema`
-- `Pneumothorax`
-
-`No Finding` and `Other` are not model outputs.
-
-## Project Files
-
-- `src/data/build_manifest.py`: runs the full Phase 1 dataset pipeline
-- `src/models/baseline.py`: runs the torchxrayvision pretrained baseline
-- `src/models/train.py`: runs the overfit-20 check and optional full fine-tuning
-- `src/models/predict.py`: final `predict_findings(image_path)` tool
-- `notebooks/01_eda.ipynb`: Phase 1 EDA notebook
-- `notebooks/02_vision_baseline.ipynb`: pretrained baseline notebook
-- `notebooks/02_vision_finetune.ipynb`: fine-tuning notebook
-- `notebooks/02_vision_eval.ipynb`: final comparison notebook
-- `datasheet.md`: dataset documentation
-- `PHASE2.md`: Phase 2 result report
-- `LICENSES.md`: dataset licence notes
-
-## Phase 1 Dataset
-
-Phase 1 creates:
-
-- 3,791 cleaned frontal chest X-ray images
-- 3,666 patient/study groups
-- train / validation / test split
-- zero patient overlap across splits
-- rule-based labels from source terms and report text
-
-Final dataset:
-
-```text
-data/processed/manifest.parquet
-```
-
-Split sizes:
-
-| split | rows |
-|---|---:|
-| train | 2,653 |
-| val | 574 |
-| test | 564 |
-
-Rebuild Phase 1:
+Run the full agent on an image:
 
 ```bash
-python src/data/build_manifest.py
+python -m src.agent.run data/processed/images_224/797_IM-2332-1001.dcm.png
 ```
 
-On Windows with the local virtual environment:
+Start the web app:
 
 ```bash
-.venv\Scripts\python.exe src\data\build_manifest.py
+python -m uvicorn src.api.main:app --reload
+# open http://127.0.0.1:8000/
 ```
 
-## More Detail
+Or with Docker:
 
-For the dataset card, see `datasheet.md`.
+```bash
+docker compose up --build
+# open http://127.0.0.1:8000/   (set OPENAI_API_KEY in a .env file first)
+```
 
-For the vision benchmark writeup, see `PHASE2.md`.
+The vision tool returns probabilities for six findings: Cardiomegaly, Atelectasis, Consolidation / Pneumonia, Pleural Effusion, Edema, and Pneumothorax. `No Finding` and `Other` are derived, not model outputs.
+
+---
+
+## Repository layout
+
+```
+src/data/    Phase 1 dataset pipeline (parse, label, dedupe, split, manifest)
+src/models/  Phase 2 vision (baseline, train, evaluate, predict)
+src/rag/     Phase 3 knowledge base + retrieval
+src/agent/   Phase 4 LangGraph agent (state, nodes, graph, run)
+src/api/     Phase 6 FastAPI app
+web/         upload UI
+notebooks/   per-phase notebooks
+outputs/     saved metrics, traces, and figures
+```
+
+---
+
+## Limitations
+
+RadScribe is a local demo, not a clinical or production system. The labels are rule-derived (about 90% agreement), disease prevalence in the test set is low (~19%), and two findings are too rare to measure. There is no authentication, database, rate limiting, DICOM/PHI handling, or robust out-of-domain image detector. A real clinical tool would need all of those plus external validation. These limits are documented rather than hidden, because knowing where a system fails is part of building it well.
