@@ -93,10 +93,10 @@ The signed-off traces include:
 
 | Case | Trace |
 | --- | --- |
-| Clear positive | `outputs/agent/traces/20260822T045514Z_797_IM-2332-1001.dcm.json` |
-| Normal | `outputs/agent/traces/20260822T045715Z_3528_IM-1725-2002.dcm.json` |
-| Other / low-confidence | `outputs/agent/traces/20260822T045724Z_1131_IM-0088-0001-0002.dcm.json` |
-| Bad path guardrail | `outputs/agent/traces/20260822T045637Z_not_real.json` |
+| Clear positive | `outputs/agent/traces/20260822T050941Z_797_IM-2332-1001.dcm.json` |
+| Normal | `outputs/agent/traces/20260822T050942Z_3528_IM-1725-2002.dcm.json` |
+| Other / low-confidence | `outputs/agent/traces/20260822T050942Z_1131_IM-0088-0001-0002.dcm.json` |
+| Bad path guardrail | `outputs/agent/traces/20260822T050942Z_not_real.json` |
 
 ## Showcase Cases
 
