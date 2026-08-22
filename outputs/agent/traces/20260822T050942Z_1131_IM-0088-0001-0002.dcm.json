@@ -1,0 +1,43 @@
+{
+  "image_path": "E:\\Project\\RadScribe\\data\\processed\\images_224\\1131_IM-0088-0001-0002.dcm.png",
+  "question": null,
+  "guardrail_passed": true,
+  "guardrail_reason": "input image file is readable",
+  "vision_predictions": [
+    {
+      "finding": "Cardiomegaly",
+      "probability": 0.12582118809223175
+    },
+    {
+      "finding": "Atelectasis",
+      "probability": 0.11014366894960403
+    },
+    {
+      "finding": "Consolidation / Pneumonia",
+      "probability": 0.0924312099814415
+    },
+    {
+      "finding": "Pneumothorax",
+      "probability": 0.0671548843383789
+    },
+    {
+      "finding": "Edema",
+      "probability": 0.041385505348443985
+    },
+    {
+      "finding": "Pleural Effusion",
+      "probability": 0.02714396081864834
+    }
+  ],
+  "main_findings": [],
+  "borderline_findings": [],
+  "retrieval_findings": [],
+  "vision_status": "no_finding_above_threshold",
+  "draft_report": "No finding above the model confidence threshold. No disease-specific draft was generated.",
+  "critic_result": {
+    "supported": true,
+    "missing_evidence": [],
+    "safety_note": "No disease-specific claim was made."
+  },
+  "final_report": "No finding above the model confidence threshold. No disease-specific draft was generated.\n\nEducational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+}

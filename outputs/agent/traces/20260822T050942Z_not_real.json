@@ -1,0 +1,22 @@
+{
+  "image_path": "E:\\Project\\RadScribe\\data\\processed\\images_224\\not_real.png",
+  "question": null,
+  "guardrail_passed": false,
+  "guardrail_reason": "Input file does not exist: E:\\Project\\RadScribe\\data\\processed\\images_224\\not_real.png",
+  "vision_predictions": [],
+  "main_findings": [],
+  "borderline_findings": [],
+  "retrieval_findings": [],
+  "vision_status": "input_refused",
+  "evidence": [],
+  "best_retrieval_score": 0.0,
+  "retrieval_ok": false,
+  "can_draft": false,
+  "draft_report": "Input refused: Input file does not exist: E:\\Project\\RadScribe\\data\\processed\\images_224\\not_real.png",
+  "critic_result": {
+    "supported": true,
+    "missing_evidence": [],
+    "safety_note": "Input was refused before vision inference."
+  },
+  "final_report": "Input refused: Input file does not exist: E:\\Project\\RadScribe\\data\\processed\\images_224\\not_real.png\n\nEducational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+}
