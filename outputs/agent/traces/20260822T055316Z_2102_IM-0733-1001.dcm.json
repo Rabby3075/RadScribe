@@ -1,0 +1,215 @@
+{
+  "image_path": "e:\\Project\\RadScribe\\data\\processed\\images_224\\2102_IM-0733-1001.dcm.png",
+  "question": null,
+  "guardrail_passed": true,
+  "guardrail_reason": "input image file is readable",
+  "vision_predictions": [
+    {
+      "finding": "Cardiomegaly",
+      "probability": 0.8584614396095276
+    },
+    {
+      "finding": "Atelectasis",
+      "probability": 0.546066403388977
+    },
+    {
+      "finding": "Pleural Effusion",
+      "probability": 0.37640899419784546
+    },
+    {
+      "finding": "Consolidation / Pneumonia",
+      "probability": 0.27175992727279663
+    },
+    {
+      "finding": "Pneumothorax",
+      "probability": 0.18153823912143707
+    },
+    {
+      "finding": "Edema",
+      "probability": 0.06913594156503677
+    }
+  ],
+  "main_findings": [
+    "Cardiomegaly"
+  ],
+  "borderline_findings": [
+    "Atelectasis"
+  ],
+  "retrieval_findings": [
+    "Cardiomegaly",
+    "Atelectasis"
+  ],
+  "vision_status": "high_confidence",
+  "evidence": [
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "main",
+      "vision_probability": 0.8584614396095276,
+      "rank": 1,
+      "chunk_id": "cardiomegaly_001",
+      "text": "The finding matters because an enlarged cardiac silhouette can be a clue that the heart is under strain or not pumping normally. Heart failure can cause symptoms such as tiredness, shortness of breath, and fluid buildup in the body, although the exact cause cannot be decided from a chest X-ray alone. On a chest X-ray, cardiomegaly is usually considered when the cardiac silhouette is larger than expected compared with the chest. A common measurement is the cardiothoracic ratio on a PA chest radiograph; a ratio above about 50 percent can suggest enlargement.",
+      "finding": "Cardiomegaly",
+      "score": 0.7477215528488159,
+      "distance": 0.2522784471511841,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "main",
+      "vision_probability": 0.8584614396095276,
+      "rank": 2,
+      "chunk_id": "cardiomegaly_002",
+      "text": "A common measurement is the cardiothoracic ratio on a PA chest radiograph; a ratio above about 50 percent can suggest enlargement. Portable AP views can exaggerate heart size, so the report should describe the finding carefully and consider image technique. Cardiomegaly should be reported as an imaging observation, not as a full diagnosis. Follow-up with clinical history, prior imaging, echocardiography, or other tests may be needed to understand the cause.",
+      "finding": "Cardiomegaly",
+      "score": 0.7098684906959534,
+      "distance": 0.29013150930404663,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "main",
+      "vision_probability": 0.8584614396095276,
+      "rank": 3,
+      "chunk_id": "cardiomegaly_000",
+      "text": "Cardiomegaly means the heart appears enlarged. It is not a single disease by itself; it is a finding that can happen when the heart has changed because of another condition. Common associated problems can include high blood pressure, heart valve disease, coronary artery disease, cardiomyopathy, or heart failure. The finding matters because an enlarged cardiac silhouette can be a clue that the heart is under strain or not pumping normally.",
+      "finding": "Cardiomegaly",
+      "score": 0.7052236795425415,
+      "distance": 0.2947763204574585,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Atelectasis",
+      "confidence_group": "borderline",
+      "vision_probability": 0.546066403388977,
+      "rank": 1,
+      "chunk_id": "atelectasis_001",
+      "text": "Atelectasis can happen for several reasons, including airway blockage, compression from nearby fluid or air, shallow breathing, or postoperative changes. Small areas may cause few symptoms, while larger areas can be associated with shortness of breath, faster breathing, low oxygen, or reduced movement on the affected side. On chest X-ray, atelectasis is often considered when there is increased opacity together with signs of volume loss. Depending on the location, this may include crowding of nearby structures, elevation of the diaphragm, shift of fissures, or movement of the mediastinum toward the affected side.",
+      "finding": "Atelectasis",
+      "score": 0.636799693107605,
+      "distance": 0.363200306892395,
+      "provider": "openai",
+      "source_ids": [
+        "atelectasis_wikipedia"
+      ],
+      "source_titles": [
+        "Atelectasis"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Atelectasis"
+      ],
+      "licences": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Atelectasis",
+      "confidence_group": "borderline",
+      "vision_probability": 0.546066403388977,
+      "rank": 2,
+      "chunk_id": "atelectasis_002",
+      "text": "Depending on the location, this may include crowding of nearby structures, elevation of the diaphragm, shift of fissures, or movement of the mediastinum toward the affected side. Atelectasis should be described as an imaging finding and interpreted with the clinical situation. A report should avoid assuming the exact cause unless the image or history clearly supports it.",
+      "finding": "Atelectasis",
+      "score": 0.5835543274879456,
+      "distance": 0.41644567251205444,
+      "provider": "openai",
+      "source_ids": [
+        "atelectasis_wikipedia"
+      ],
+      "source_titles": [
+        "Atelectasis"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Atelectasis"
+      ],
+      "licences": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Atelectasis",
+      "confidence_group": "borderline",
+      "vision_probability": 0.546066403388977,
+      "rank": 3,
+      "chunk_id": "consolidation_pneumonia_002",
+      "text": "It may look denser or whiter than normal aerated lung. In pneumonia, the opacity may match the infected region, and air bronchograms can sometimes be seen when air-filled bronchi remain visible within surrounding opacified lung. Consolidation should be described as an imaging pattern and interpreted with symptoms, history, and other clinical information. The report should describe the opacity pattern and avoid claiming the organism or exact diagnosis from the X-ray alone.",
+      "finding": "Consolidation / Pneumonia",
+      "score": 0.5627721548080444,
+      "distance": 0.43722784519195557,
+      "provider": "openai",
+      "source_ids": [
+        "consolidation_pneumonia_cdc",
+        "consolidation_pneumonia_wikipedia"
+      ],
+      "source_titles": [
+        "About Pneumonia",
+        "Pulmonary consolidation"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/pneumonia/about/index.html",
+        "https://en.wikipedia.org/wiki/Pulmonary_consolidation"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    }
+  ],
+  "best_retrieval_score": 0.7477215528488159,
+  "retrieval_ok": true,
+  "can_draft": true,
+  "draft_report": "**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, there is a borderline observation of possible atelectasis, which may be associated with volume loss or airway obstruction.\n\n**Impression:**\n- Cardiomegaly is noted, warranting further clinical correlation.\n- Possible atelectasis may require additional evaluation.\n\n**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)",
+  "critic_result": {
+    "supported": true,
+    "missing_evidence": [],
+    "safety_note": "All findings in the draft are supported by the evidence provided."
+  },
+  "final_report": "**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, there is a borderline observation of possible atelectasis, which may be associated with volume loss or airway obstruction.\n\n**Impression:**\n- Cardiomegaly is noted, warranting further clinical correlation.\n- Possible atelectasis may require additional evaluation.\n\n**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)\n\nEducational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+}

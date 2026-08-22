@@ -1,0 +1,136 @@
+{
+  "image_path": "e:\\Project\\RadScribe\\data\\processed\\images_224\\2722_IM-1184-1001.dcm.png",
+  "question": null,
+  "guardrail_passed": true,
+  "guardrail_reason": "input image file is readable",
+  "vision_predictions": [
+    {
+      "finding": "Cardiomegaly",
+      "probability": 0.9017106890678406
+    },
+    {
+      "finding": "Atelectasis",
+      "probability": 0.4647614657878876
+    },
+    {
+      "finding": "Edema",
+      "probability": 0.4376167953014374
+    },
+    {
+      "finding": "Consolidation / Pneumonia",
+      "probability": 0.25415846705436707
+    },
+    {
+      "finding": "Pleural Effusion",
+      "probability": 0.2113969624042511
+    },
+    {
+      "finding": "Pneumothorax",
+      "probability": 0.08641716837882996
+    }
+  ],
+  "main_findings": [
+    "Cardiomegaly"
+  ],
+  "borderline_findings": [],
+  "retrieval_findings": [
+    "Cardiomegaly"
+  ],
+  "vision_status": "high_confidence",
+  "evidence": [
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "main",
+      "vision_probability": 0.9017106890678406,
+      "rank": 1,
+      "chunk_id": "cardiomegaly_001",
+      "text": "The finding matters because an enlarged cardiac silhouette can be a clue that the heart is under strain or not pumping normally. Heart failure can cause symptoms such as tiredness, shortness of breath, and fluid buildup in the body, although the exact cause cannot be decided from a chest X-ray alone. On a chest X-ray, cardiomegaly is usually considered when the cardiac silhouette is larger than expected compared with the chest. A common measurement is the cardiothoracic ratio on a PA chest radiograph; a ratio above about 50 percent can suggest enlargement.",
+      "finding": "Cardiomegaly",
+      "score": 0.7477215528488159,
+      "distance": 0.2522784471511841,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "main",
+      "vision_probability": 0.9017106890678406,
+      "rank": 2,
+      "chunk_id": "cardiomegaly_002",
+      "text": "A common measurement is the cardiothoracic ratio on a PA chest radiograph; a ratio above about 50 percent can suggest enlargement. Portable AP views can exaggerate heart size, so the report should describe the finding carefully and consider image technique. Cardiomegaly should be reported as an imaging observation, not as a full diagnosis. Follow-up with clinical history, prior imaging, echocardiography, or other tests may be needed to understand the cause.",
+      "finding": "Cardiomegaly",
+      "score": 0.7098684906959534,
+      "distance": 0.29013150930404663,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "main",
+      "vision_probability": 0.9017106890678406,
+      "rank": 3,
+      "chunk_id": "cardiomegaly_000",
+      "text": "Cardiomegaly means the heart appears enlarged. It is not a single disease by itself; it is a finding that can happen when the heart has changed because of another condition. Common associated problems can include high blood pressure, heart valve disease, coronary artery disease, cardiomyopathy, or heart failure. The finding matters because an enlarged cardiac silhouette can be a clue that the heart is under strain or not pumping normally.",
+      "finding": "Cardiomegaly",
+      "score": 0.7052236795425415,
+      "distance": 0.2947763204574585,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    }
+  ],
+  "best_retrieval_score": 0.7477215528488159,
+  "retrieval_ok": true,
+  "can_draft": true,
+  "draft_report": "**Findings:**  \nModel suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular heart disease.\n\n**Impression:**  \n- Model suggests cardiomegaly.  \n- Further clinical correlation and follow-up imaging may be necessary to determine the underlying cause.  \n\n**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)",
+  "critic_result": {
+    "supported": true,
+    "missing_evidence": [],
+    "safety_note": "The findings and impressions are consistent with the evidence provided."
+  },
+  "final_report": "**Findings:**  \nModel suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular heart disease.\n\n**Impression:**  \n- Model suggests cardiomegaly.  \n- Further clinical correlation and follow-up imaging may be necessary to determine the underlying cause.  \n\n**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)\n\nEducational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+}

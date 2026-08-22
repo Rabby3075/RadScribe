@@ -1,0 +1,14 @@
+{
+  "n_test_studies": 550,
+  "true_disease_studies": 107,
+  "normal_or_other_studies": 443,
+  "would_draft_count": 124,
+  "tp": 66,
+  "fp": 58,
+  "tn": 385,
+  "fn": 41,
+  "sensitivity": 0.616822429906542,
+  "specificity": 0.8690744920993227,
+  "false_report_rate": 0.1309255079006772,
+  "true_label_in_main_rate_when_drafted": 0.45161290322580644
+}

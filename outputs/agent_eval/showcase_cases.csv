@@ -1,0 +1,4 @@
+case_note,study_id,true_labels,main_findings,borderline_findings
+positive draft,2901,"[""Atelectasis""]","[""Atelectasis""]","[""Cardiomegaly"", ""Consolidation / Pneumonia"", ""Pneumothorax""]"
+quiet normal/other,1413,"[""Other""]",[],"[""Cardiomegaly"", ""Atelectasis""]"
+false report,2931,"[""Other""]","[""Atelectasis""]","[""Consolidation / Pneumonia""]"

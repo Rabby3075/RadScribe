@@ -1,0 +1,1179 @@
+study_id,image_path,true_labels,main_findings,borderline_findings,best_retrieval_score,retrieval_ok,can_draft,critic_supported,has_disclaimer,trace_path,final_report
+1021,data/processed/images_224/1021_IM-0017-1001-0001.dcm.png,"[""Atelectasis"", ""Pneumothorax""]","[""Atelectasis"", ""Cardiomegaly"", ""Consolidation / Pneumonia""]","[""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055132Z_1021_IM-0017-1001-0001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, cardiomegaly, and consolidation or pneumonia. Additionally, there may be a possible pleural effusion.
+
+**Impression:**
+- Atelectasis, cardiomegaly, and consolidation/pneumonia are notable findings.
+- Possible pleural effusion warrants further evaluation.
+
+**Evidence:** (atelectasis_001, cardiomegaly_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+106,data/processed/images_224/106_IM-0042-1001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055135Z_106_IM-0042-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. This finding may warrant further clinical evaluation to determine the underlying cause.
+
+**Impression:**
+- Possible cardiomegaly.
+  
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1081,data/processed/images_224/1081_IM-0057-2002.dcm.png,"[""Other""]","[""Cardiomegaly"", ""Pleural Effusion"", ""Atelectasis"", ""Consolidation / Pneumonia""]",[],0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055139Z_1081_IM-0057-2002.dcm.json,"**Findings:** Model suggests cardiomegaly, which may indicate an enlarged cardiac silhouette potentially due to underlying heart conditions. Pleural effusion is also possible, characterized by abnormal fluid accumulation at the lung base, which may affect lung expansion. Additionally, atelectasis may represent areas of lung collapse, while consolidation or pneumonia may be indicated by denser lung regions.
+
+**Impression:**
+- Possible cardiomegaly and pleural effusion.
+- Possible atelectasis and consolidation/pneumonia.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, pleural_effusion_002, pleural_effusion_003, atelectasis_001, consolidation_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1169,data/processed/images_224/1169_IM-0113-0001-0002.dcm.png,"[""Atelectasis""]","[""Pleural Effusion"", ""Consolidation / Pneumonia"", ""Atelectasis"", ""Pneumothorax""]","[""Cardiomegaly"", ""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055143Z_1169_IM-0113-0001-0002.dcm.json,"**Findings:** Model suggests the presence of pleural effusion, which may be indicated by abnormal fluid at the lung base or in the pleural space. Consolidation or pneumonia may be present, characterized by denser areas in the lung that could represent inflammatory fluid or other materials filling normally air-filled lung tissue. Atelectasis and pneumothorax are also possible, indicating lung collapse or air in the pleural space, respectively. Borderline findings include possible cardiomegaly and edema.
+
+**Impression:**
+- Model suggests pleural effusion, consolidation/pneumonia, atelectasis, and pneumothorax.
+- Possible cardiomegaly and edema.
+
+**Evidence:** (pleural_effusion_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1170,data/processed/images_224/1170_IM-0115-2001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055146Z_1170_IM-0115-2001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular disease.
+
+**Impression:**  
+- Model suggests cardiomegaly.  
+- Further clinical correlation and additional imaging may be necessary for comprehensive evaluation.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1174,data/processed/images_224/1174_IM-0118-1001.dcm.png,"[""Consolidation / Pneumonia""]","[""Cardiomegaly""]","[""Edema""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055149Z_1174_IM-0118-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Edema is possible, which could manifest as increased vascular markings or other patterns on the X-ray.
+
+**Impression:**
+- Cardiomegaly likely present.
+- Possible edema.
+
+**Evidence:** (cardiomegaly_001, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1196,data/processed/images_224/1196_IM-0131-1001.dcm.png,"[""Consolidation / Pneumonia""]","[""Cardiomegaly""]","[""Pleural Effusion"", ""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055153Z_1196_IM-0131-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette which may reflect underlying heart strain or dysfunction. Additionally, possible pleural effusion and atelectasis are noted, which may be associated with reduced lung expansion and respiratory symptoms.
+
+**Impression:**  
+- Cardiomegaly may represent an underlying cardiac condition.  
+- Possible pleural effusion and atelectasis warrant further clinical correlation.
+
+**Evidence:** (cardiomegaly_001, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1202,data/processed/images_224/1202_IM-0136-1001.dcm.png,"[""Cardiomegaly""]","[""Edema"", ""Cardiomegaly"", ""Consolidation / Pneumonia""]","[""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055156Z_1202_IM-0136-1001.dcm.json,"**Findings:** Model suggests possible pulmonary edema, likely indicated by increased vascular markings and potential batwing air-space opacity. Cardiomegaly may represent an enlarged cardiac silhouette, suggesting strain on the heart. Consolidation or pneumonia is possible, indicated by patchy alveolar opacities. A borderline finding of pleural effusion may be present, suggested by potential blunting of the costophrenic angle.
+
+**Impression:**
+- Possible pulmonary edema, cardiomegaly, and consolidation/pneumonia.
+- Borderline pleural effusion may be present.
+
+**Evidence:** (edema_001, cardiomegaly_001, cardiomegaly_002, consolidation/pneumonia, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1221,data/processed/images_224/1221_IM-0149-0001-0002.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055159Z_1221_IM-0149-0001-0002.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. 
+
+**Impression:**  
+- Possible cardiomegaly. Follow-up with clinical correlation and further imaging may be warranted.  
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1233,data/processed/images_224/1233_IM-0157-1001.dcm.png,"[""Cardiomegaly"", ""Atelectasis""]","[""Cardiomegaly""]","[""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055201Z_1233_IM-0157-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, there is a possible indication of atelectasis, which may be associated with volume loss and increased opacity in the affected lung regions.
+
+**Impression:**
+- Cardiomegaly likely present.
+- Possible atelectasis.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1243,data/processed/images_224/1243_IM-0165-4004.dcm.png,"[""Cardiomegaly"", ""Pleural Effusion"", ""Atelectasis""]","[""Atelectasis"", ""Pleural Effusion"", ""Consolidation / Pneumonia"", ""Cardiomegaly""]",[],0.7645325660705566,True,True,False,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055205Z_1243_IM-0165-4004.dcm.json,"**Findings:** Model suggests the presence of atelectasis, possible pleural effusion, and consolidation or pneumonia. Cardiomegaly may represent an enlargement of the heart. 
+
+**Impression:**  
+- Model suggests atelectasis, pleural effusion, and consolidation/pneumonia as significant findings.  
+- Cardiomegaly may represent an underlying cardiac condition.  
+
+**Evidence:** (atelectasis_001, pleural_effusion_002, consolidation_pneumonia_002, pleural_effusion_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1292,data/processed/images_224/1292_IM-0191-1001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly""]","[""Consolidation / Pneumonia"", ""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055208Z_1292_IM-0191-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, possible consolidation or pneumonia may be present, characterized by denser areas in the lung fields that could represent inflammatory processes.
+
+**Impression:**  
+- Cardiomegaly likely indicated.  
+- Possible consolidation or pneumonia noted.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, consolidation_pneumonia_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1311,data/processed/images_224/1311_IM-0203-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055210Z_1311_IM-0203-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. This finding may warrant further clinical correlation and additional imaging to determine the underlying cause.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- No other significant findings noted.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1348,data/processed/images_224/1348_IM-0226-4004-0001.dcm.png,"[""Atelectasis""]","[""Atelectasis"", ""Consolidation / Pneumonia""]","[""Pleural Effusion"", ""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055214Z_1348_IM-0226-4004-0001.dcm.json,"**Findings:**  
+Model suggests the presence of atelectasis and consolidation/pneumonia, indicated by increased opacity and possible volume loss in the affected lung regions. Borderline findings may include pleural effusion and edema.
+
+**Impression:**  
+- Possible atelectasis and consolidation/pneumonia.  
+- Borderline findings of pleural effusion and edema may represent additional considerations.
+
+**Evidence:** (atelectasis_001, atelectasis_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1362,data/processed/images_224/1362_IM-0235-1001.dcm.png,"[""Cardiomegaly"", ""Atelectasis""]","[""Consolidation / Pneumonia"", ""Atelectasis"", ""Pleural Effusion"", ""Cardiomegaly""]","[""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055218Z_1362_IM-0235-1001.dcm.json,"**Findings:**  
+Model suggests consolidation or pneumonia, characterized by increased opacity in the lung fields, which may indicate the presence of inflammatory fluid or other materials. Atelectasis may be present, potentially indicated by volume loss and associated structural changes. Pleural effusion is also possible, suggesting fluid accumulation in the pleural space. Cardiomegaly may represent an enlarged heart silhouette.
+
+**Impression:**  
+- Possible consolidation or pneumonia, atelectasis, and pleural effusion.  
+- Cardiomegaly may be indicated.  
+
+**Evidence:** (consolidation_pneumonia_001, consolidation_pneumonia_002, atelectasis_001, pleural_effusion_001, cardiomegaly_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1525,data/processed/images_224/1525_IM-0340-3001.dcm.png,"[""Atelectasis""]","[""Consolidation / Pneumonia"", ""Pleural Effusion"", ""Cardiomegaly"", ""Pneumothorax""]","[""Atelectasis"", ""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055222Z_1525_IM-0340-3001.dcm.json,"**Findings:**  
+Model suggests possible consolidation or pneumonia, characterized by areas of increased opacity that may indicate fluid or inflammatory material in the lung tissue. Additionally, pleural effusion may be present, indicated by blunting of the costophrenic angle or layering fluid. Cardiomegaly is also suggested, which may reflect an enlarged heart. Pneumothorax is a possibility, indicated by the presence of air in the pleural space.
+
+**Impression:**  
+- Possible consolidation/pneumonia, pleural effusion, and cardiomegaly.  
+- Pneumothorax may represent an additional concern.  
+
+**Evidence:** (consolidation_pneumonia_001, pleural_effusion_002, pleural_effusion_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1541,data/processed/images_224/1541_IM-0352-1001.dcm.png,"[""Cardiomegaly"", ""Pleural Effusion"", ""Atelectasis""]","[""Pleural Effusion"", ""Cardiomegaly"", ""Edema"", ""Consolidation / Pneumonia""]","[""Atelectasis""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055226Z_1541_IM-0352-1001.dcm.json,"**Findings:**  
+Model suggests the presence of pleural effusion, which may be indicated by abnormal fluid at the lung base or in the pleural space. Cardiomegaly is also suggested, potentially indicated by an enlarged cardiac silhouette. Edema may represent fluid accumulation in the lungs, while consolidation or pneumonia is possible, indicating areas of lung opacity. Atelectasis is a lower-confidence observation that may suggest partial lung collapse.
+
+**Impression:**  
+- Model suggests pleural effusion and cardiomegaly.  
+- Possible edema and consolidation/pneumonia; atelectasis may be present.
+
+**Evidence:** (pleural_effusion_002, cardiomegaly_001, edema, consolidation)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1556,data/processed/images_224/1556_IM-0363-1001.dcm.png,"[""Consolidation / Pneumonia""]","[""Consolidation / Pneumonia"", ""Atelectasis"", ""Pleural Effusion"", ""Edema"", ""Cardiomegaly""]",[],0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055229Z_1556_IM-0363-1001.dcm.json,"**Findings:** Model suggests consolidation or pneumonia, characterized by increased opacity in the lung fields, which may indicate the presence of inflammatory fluid or other materials. Atelectasis may also be present, potentially indicated by volume loss and associated structural shifts. Additionally, pleural effusion and edema may be considered, along with possible cardiomegaly.
+
+**Impression:**
+- Possible consolidation or pneumonia, atelectasis, pleural effusion, and edema.
+- Possible cardiomegaly.
+
+**Evidence:** (consolidation_pneumonia_001, consolidation_pneumonia_002, atelectasis_001, atelectasis_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1595,data/processed/images_224/1595_IM-0386-2001.dcm.png,"[""Cardiomegaly""]","[""Atelectasis"", ""Cardiomegaly""]","[""Consolidation / Pneumonia"", ""Edema"", ""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055233Z_1595_IM-0386-2001.dcm.json,"**Findings:**  
+Model suggests the presence of atelectasis and cardiomegaly. Possible consolidation or pneumonia, edema, and pleural effusion may also be indicated.
+
+**Impression:**  
+- Model suggests atelectasis and cardiomegaly.  
+- Possible consolidation/pneumonia, edema, and pleural effusion.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, atelectasis_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1691,data/processed/images_224/1691_IM-0453-4001.dcm.png,"[""Consolidation / Pneumonia"", ""Pneumothorax""]","[""Atelectasis"", ""Consolidation / Pneumonia""]","[""Cardiomegaly"", ""Edema"", ""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055236Z_1691_IM-0453-4001.dcm.json,"**Findings:**  
+Model suggests the presence of atelectasis, which may be associated with increased opacity and signs of volume loss. Additionally, consolidation or pneumonia may be indicated by areas of denser opacity within the lung fields, potentially consistent with inflammatory processes.
+
+**Impression:**  
+- Possible atelectasis.  
+- Possible consolidation or pneumonia.
+
+**Evidence:** (atelectasis_001, atelectasis_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1697,data/processed/images_224/1697_IM-0458-1001.dcm.png,"[""No Finding""]","[""Atelectasis""]","[""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055238Z_1697_IM-0458-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be associated with increased opacity and signs of volume loss. There is also a possible indication of consolidation or pneumonia, characterized by denser lung tissue that may appear whiter than normally aerated lung.
+
+**Impression:**
+- Atelectasis likely present.
+- Possible consolidation or pneumonia.
+
+**Evidence:** (atelectasis_001, atelectasis_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+172,data/processed/images_224/172_IM-0474-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055241Z_172_IM-0474-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may imply underlying heart strain or dysfunction. This finding may warrant further clinical correlation and evaluation.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Follow-up with clinical history and additional imaging may be necessary for further assessment.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1733,data/processed/images_224/1733_IM-0483-0001-0001.dcm.png,"[""Pleural Effusion"", ""Atelectasis""]","[""Atelectasis""]","[""Pleural Effusion"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055245Z_1733_IM-0483-0001-0001.dcm.json,"**Findings:**  
+Model suggests the presence of atelectasis, which may be indicated by increased opacity and signs of volume loss. Borderline findings include possible pleural effusion, characterized by abnormal fluid at the lung base, and possible consolidation or pneumonia, which may appear as denser areas within the lung fields.
+
+**Impression:**  
+- Model suggests atelectasis.  
+- Possible pleural effusion and consolidation/pneumonia.
+
+**Evidence:** (atelectasis_001, atelectasis_002, pleural_effusion_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1735,data/processed/images_224/1735_IM-0484-1001.dcm.png,"[""Other""]","[""Atelectasis""]","[""Pneumothorax"", ""Pleural Effusion"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055248Z_1735_IM-0484-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be indicated by increased opacity and signs of volume loss. Borderline findings include possible pneumothorax, pleural effusion, and consolidation or pneumonia.
+
+**Impression:**
+- Atelectasis likely indicated.
+- Possible pneumothorax, pleural effusion, and consolidation/pneumonia.
+
+**Evidence:** (atelectasis_001, atelectasis_002, pneumothorax_001, pneumothorax_002, pleural_effusion_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1789,data/processed/images_224/1789_IM-0513-1001.dcm.png,"[""Other""]","[""Atelectasis""]","[""Cardiomegaly"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055251Z_1789_IM-0513-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be indicated by increased opacity and signs of volume loss. Borderline findings include possible cardiomegaly and consolidation or pneumonia, which may manifest as denser lung opacities.
+
+**Impression:**  
+- Possible atelectasis.  
+- Borderline cardiomegaly and consolidation/pneumonia.
+
+**Evidence:** (atelectasis_001, atelectasis_002, cardiomegaly_001, cardiomegaly_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1827,data/processed/images_224/1827_IM-0535-1001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]",[],0.747713565826416,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055254Z_1827_IM-0535-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. This finding may warrant further clinical evaluation to determine the underlying cause.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Further assessment may be needed to clarify the etiology.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1934,data/processed/images_224/1934_IM-0604-1001.dcm.png,"[""Other""]","[""Atelectasis"", ""Consolidation / Pneumonia"", ""Pleural Effusion""]","[""Pneumothorax"", ""Cardiomegaly""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055257Z_1934_IM-0604-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be associated with increased opacity and signs of volume loss. Additionally, consolidation or pneumonia may be indicated, characterized by denser lung tissue potentially filled with inflammatory material. Pleural effusion is also possible, which could manifest as fluid accumulation in the pleural space.
+
+**Impression:**
+- Possible atelectasis, consolidation/pneumonia, and pleural effusion.
+- Borderline findings may include pneumothorax and cardiomegaly.
+
+**Evidence:** (atelectasis_001, atelectasis_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1957,data/processed/images_224/1957_IM-0624-4004.dcm.png,"[""Pleural Effusion""]","[""Pleural Effusion"", ""Consolidation / Pneumonia"", ""Cardiomegaly"", ""Atelectasis"", ""Edema""]",[],0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055301Z_1957_IM-0624-4004.dcm.json,"**Findings:** Model suggests the presence of pleural effusion, which may appear as abnormal fluid at the lung base or in the pleural space. Consolidation or pneumonia may represent a radiographic pattern where normally air-filled lung tissue is filled with inflammatory fluid or other materials. Cardiomegaly is possible, indicating an enlarged heart. Atelectasis may represent areas of lung collapse, and edema could indicate fluid accumulation in the lung interstitium.
+
+**Impression:**
+- Model suggests pleural effusion, consolidation/pneumonia, cardiomegaly, atelectasis, and edema as potential findings.
+  
+**Evidence:** (pleural_effusion_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1971,data/processed/images_224/1971_IM-0633-1001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055304Z_1971_IM-0633-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may imply underlying heart strain or dysfunction. The cardiothoracic ratio may exceed 50 percent, which is typically used to assess enlargement on a PA chest radiograph.
+
+**Impression:**
+- Possible cardiomegaly.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+1990,data/processed/images_224/1990_IM-0648-1001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly"", ""Edema""]","[""Pleural Effusion""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055307Z_1990_IM-0648-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette, which may imply underlying heart strain or dysfunction. Edema is also possible, with imaging patterns that may suggest pulmonary involvement. A borderline finding of pleural effusion may represent abnormal fluid accumulation in the pleural space.
+
+**Impression:**  
+- Possible cardiomegaly and edema.  
+- Borderline pleural effusion.
+
+**Evidence:** (cardiomegaly_001, edema_001, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+206,data/processed/images_224/206_IM-0697-6001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly""]","[""Atelectasis"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055310Z_206_IM-0697-6001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Borderline findings include possible atelectasis and consolidation or pneumonia, which may manifest as increased opacity in the lung fields.
+
+**Impression:**  
+- Cardiomegaly may represent an underlying cardiac condition requiring further evaluation.  
+- Atelectasis and consolidation/pneumonia are possible and should be correlated with clinical context.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, cardiomegaly_000, atelectasis_001, atelectasis_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2092,data/processed/images_224/2092_IM-0723-1001.dcm.png,"[""Other""]","[""Consolidation / Pneumonia"", ""Atelectasis"", ""Pleural Effusion""]",[],0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055313Z_2092_IM-0723-1001.dcm.json,"**Findings:** Model suggests consolidation or pneumonia, characterized by increased opacity in the lung fields, which may indicate the presence of inflammatory fluid or other materials. Additionally, atelectasis may be present, potentially indicated by volume loss and associated structural changes. Pleural effusion is also possible, which could manifest as blunting of the costophrenic angles.
+
+**Impression:**
+- Possible consolidation or pneumonia.
+- Possible atelectasis and pleural effusion.
+
+**Evidence:** (consolidation_pneumonia_001, atelectasis_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2102,data/processed/images_224/2102_IM-0733-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]","[""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055316Z_2102_IM-0733-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, there is a borderline observation of possible atelectasis, which may be associated with volume loss or airway obstruction.
+
+**Impression:**
+- Cardiomegaly is noted, warranting further clinical correlation.
+- Possible atelectasis may require additional evaluation.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2127,data/processed/images_224/2127_IM-0751-1001.dcm.png,"[""Cardiomegaly"", ""Pleural Effusion""]","[""Cardiomegaly"", ""Atelectasis""]","[""Pleural Effusion"", ""Edema"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055320Z_2127_IM-0751-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Atelectasis is also possible, characterized by increased opacity and potential volume loss in the affected lung regions. Borderline findings include possible pleural effusion, edema, and consolidation/pneumonia.
+
+**Impression:**  
+- Model suggests cardiomegaly and atelectasis.  
+- Possible pleural effusion, edema, and consolidation/pneumonia.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, atelectasis_001, atelectasis_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2162,data/processed/images_224/2162_IM-0779-1001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055322Z_2162_IM-0779-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may imply underlying heart strain or dysfunction. This finding may warrant further clinical correlation and evaluation.
+
+**Impression:**
+- Possible cardiomegaly.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+220,data/processed/images_224/220_IM-0811-1001.dcm.png,"[""Other""]","[""Consolidation / Pneumonia""]","[""Cardiomegaly"", ""Atelectasis"", ""Pneumothorax""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055326Z_220_IM-0811-1001.dcm.json,"**Findings:** The model suggests consolidation or pneumonia, characterized by a possible focal or lobar air-space opacity that may appear denser than normal aerated lung (consolidation_pneumonia_001, consolidation_pneumonia_002). Additionally, borderline findings include possible cardiomegaly, atelectasis, and pneumothorax.
+
+**Impression:**  
+- Model suggests consolidation or pneumonia.  
+- Possible cardiomegaly, atelectasis, and pneumothorax.  
+
+**Evidence:** (consolidation_pneumonia_001, consolidation_pneumonia_002, cardiomegaly_001, cardiomegaly_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2264,data/processed/images_224/2264_IM-0854-1001.dcm.png,"[""Other""]","[""Consolidation / Pneumonia""]","[""Atelectasis""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055329Z_2264_IM-0854-1001.dcm.json,"**Findings:** Model suggests consolidation or pneumonia, characterized by a denser opacity in the lung fields, which may indicate the presence of inflammatory fluid or other materials filling normally air-filled lung tissue. Additionally, possible atelectasis may be indicated by increased opacity and signs of volume loss, although this finding is less certain.
+
+**Impression:**
+- Possible consolidation or pneumonia.
+- Possible atelectasis.
+
+**Evidence:** (consolidation_pneumonia_001, consolidation_pneumonia_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2327,data/processed/images_224/2327_IM-0898-1001.dcm.png,"[""Pleural Effusion""]","[""Pleural Effusion"", ""Consolidation / Pneumonia"", ""Atelectasis"", ""Pneumothorax""]","[""Cardiomegaly""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055333Z_2327_IM-0898-1001.dcm.json,"**Findings:**  
+Model suggests the presence of pleural effusion, which may be indicated by abnormal fluid at the lung base or in the pleural space. There is also a possibility of consolidation or pneumonia, characterized by areas of denser opacity within the lung fields. Additionally, atelectasis may be present, potentially indicated by volume loss in a lung segment. The model also suggests a possible pneumothorax, which could manifest as an area of increased radiolucency. Cardiomegaly may represent a borderline finding.
+
+**Impression:**  
+- Possible pleural effusion, consolidation/pneumonia, atelectasis, and pneumothorax.  
+- Borderline cardiomegaly suggested.
+
+**Evidence:**  
+(citations: [pleural_effusion_002], [consolidation_pneumonia_001], [consolidation_pneumonia_002], [pleural_effusion_001])
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2336,data/processed/images_224/2336_IM-0903-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]","[""Pleural Effusion""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055336Z_2336_IM-0903-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, there is a possible pleural effusion, which may be characterized by abnormal fluid at the lung base or blunting of the costophrenic angle.
+
+**Impression:**  
+- Cardiomegaly may represent an underlying cardiac condition requiring further evaluation.  
+- Possible pleural effusion may impact lung expansion and warrant clinical correlation.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2345,data/processed/images_224/2345_IM-0910-1001.dcm.png,"[""Other""]","[""Edema"", ""Cardiomegaly""]","[""Consolidation / Pneumonia"", ""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055339Z_2345_IM-0910-1001.dcm.json,"**Findings:** Model suggests the presence of pulmonary edema and cardiomegaly. Borderline findings may include possible consolidation/pneumonia and pleural effusion.
+
+**Impression:**
+- Possible pulmonary edema and cardiomegaly.
+- Borderline observations of consolidation/pneumonia and pleural effusion.
+
+**Evidence:** (edema_001, cardiomegaly_001, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2355,data/processed/images_224/2355_IM-0919-1001.dcm.png,"[""Cardiomegaly"", ""Atelectasis""]","[""Edema"", ""Cardiomegaly"", ""Pleural Effusion"", ""Consolidation / Pneumonia""]","[""Atelectasis""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055343Z_2355_IM-0919-1001.dcm.json,"**Findings:**  
+Model suggests the presence of pulmonary edema, which may be indicated by increased vascular markings and possible air-space opacities. Cardiomegaly may represent an enlarged cardiac silhouette, potentially indicating underlying heart strain. Pleural effusion is possible, with potential blunting of the costophrenic angles. Consolidation or pneumonia may also be indicated by patchy opacities. Atelectasis is a lower-confidence observation.
+
+**Impression:**  
+- Model suggests pulmonary edema, cardiomegaly, pleural effusion, and possible consolidation or pneumonia.  
+- Atelectasis may represent a lower-confidence finding.
+
+**Evidence:** (edema_001, pleural_effusion_002, cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+239,data/processed/images_224/239_IM-0944-1001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055346Z_239_IM-0944-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding could be associated with conditions such as heart failure, hypertension, or valvular disease.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Further clinical correlation and evaluation may be necessary to determine the underlying cause.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+243,data/processed/images_224/243_IM-0971-2001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055349Z_243_IM-0971-2001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular disease.
+
+**Impression:**  
+- Model suggests cardiomegaly.  
+- Further clinical correlation and possible follow-up imaging may be necessary to determine the underlying cause.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2465,data/processed/images_224/2465_IM-0997-1001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly""]","[""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055352Z_2465_IM-0997-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. Additionally, there is a possible indication of atelectasis, which may be associated with volume loss and could manifest as increased opacity on the X-ray.
+
+**Impression:**
+- Cardiomegaly may represent an underlying cardiac condition requiring further evaluation.
+- Possible atelectasis warrants correlation with clinical findings.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2519,data/processed/images_224/2519_IM-1037-1001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly""]","[""Edema"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055355Z_2519_IM-1037-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Edema and consolidation/pneumonia are possible, with imaging patterns that could suggest pulmonary involvement.
+
+**Impression:**
+- Cardiomegaly likely present.
+- Possible edema and consolidation/pneumonia.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2520,data/processed/images_224/2520_IM-1039-27001.dcm.png,"[""Atelectasis""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055358Z_2520_IM-1039-27001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding is typically assessed using the cardiothoracic ratio, which may exceed 50% in cases of enlargement.
+
+**Impression:**  
+- Model suggests possible cardiomegaly.  
+- Further clinical correlation and additional imaging may be necessary to determine the underlying cause.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2537,data/processed/images_224/2537_IM-1049-1001.dcm.png,"[""Consolidation / Pneumonia"", ""Atelectasis""]","[""Atelectasis"", ""Consolidation / Pneumonia"", ""Cardiomegaly""]","[""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055402Z_2537_IM-1049-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be associated with volume loss and increased opacity on the chest X-ray. Consolidation, possibly indicative of pneumonia, may represent an area of denser lung tissue, potentially with air bronchograms. Cardiomegaly is also suggested, indicating possible enlargement of the heart. A borderline finding of pleural effusion may be present.
+
+**Impression:**
+- Possible atelectasis, consolidation/pneumonia, and cardiomegaly.
+- Borderline pleural effusion may be considered.
+
+**Evidence:** (atelectasis_001, atelectasis_002, consolidation_pneumonia_001, consolidation_pneumonia_002, consolidation_pneumonia_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2548,data/processed/images_224/2548_IM-1056-0001-0001.dcm.png,"[""Atelectasis""]","[""Pleural Effusion"", ""Atelectasis"", ""Consolidation / Pneumonia"", ""Cardiomegaly"", ""Pneumothorax""]",[],0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055406Z_2548_IM-1056-0001-0001.dcm.json,"**Findings:**  
+Model suggests the presence of pleural effusion, which may be indicated by abnormal fluid at the lung base or in the pleural space. Atelectasis may represent volume loss with increased opacity, potentially causing crowding of nearby structures or diaphragm elevation. Consolidation or pneumonia may be indicated by denser opacities in the lung fields, possibly with air bronchograms. Cardiomegaly may represent an enlarged cardiac silhouette, and pneumothorax may suggest the presence of air in the pleural space.
+
+**Impression:**  
+- Model suggests possible pleural effusion, atelectasis, and consolidation/pneumonia.  
+- Cardiomegaly and pneumothorax may also be present.
+
+**Evidence:** (pleural_effusion_002, pleural_effusion_003, atelectasis_001, atelectasis_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2557,data/processed/images_224/2557_IM-1061-4004.dcm.png,"[""Cardiomegaly""]","[""Atelectasis"", ""Consolidation / Pneumonia""]","[""Cardiomegaly""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055409Z_2557_IM-1061-4004.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be indicated by increased opacity and signs of volume loss in the affected area. Consolidation or pneumonia may also be suggested, characterized by denser opacities that could represent inflammatory fluid or other materials filling the lung tissue. Cardiomegaly may be a possibility based on borderline findings.
+
+**Impression:**  
+- Possible atelectasis and consolidation/pneumonia.  
+- Borderline cardiomegaly.  
+
+**Evidence:** (atelectasis_001, atelectasis_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+257,data/processed/images_224/257_IM-1072-1001.dcm.png,"[""Other""]","[""Cardiomegaly"", ""Edema""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055413Z_257_IM-1072-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette, which may reflect underlying heart strain or dysfunction. Additionally, edema may be present, potentially contributing to respiratory symptoms such as shortness of breath and cough.
+
+**Impression:**
+- Possible cardiomegaly.
+- Possible pulmonary edema.
+
+**Evidence:** (cardiomegaly_001, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+260,data/processed/images_224/260_IM-1090-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]","[""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055416Z_260_IM-1090-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. Additionally, atelectasis is possible, which may be associated with volume loss and increased opacity on the X-ray.
+
+**Impression:**
+- Cardiomegaly may represent an underlying cardiac condition requiring further evaluation.
+- Atelectasis is a possible finding that may warrant clinical correlation.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2657,data/processed/images_224/2657_IM-1139-0001-0002.dcm.png,"[""Pleural Effusion"", ""Edema""]","[""Consolidation / Pneumonia"", ""Pleural Effusion"", ""Atelectasis"", ""Pneumothorax"", ""Edema""]","[""Cardiomegaly""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055420Z_2657_IM-1139-0001-0002.dcm.json,"**Findings:**  
+Model suggests possible consolidation or pneumonia, characterized by areas of increased opacity that may indicate fluid or inflammatory material within the lung tissue. Additionally, pleural effusion may be present, indicated by blunting of the costophrenic angle or fluid layering. Atelectasis and pneumothorax are also possible, with atelectasis potentially reflecting lung collapse and pneumothorax indicating air in the pleural space. Edema may represent fluid accumulation in the lung interstitium.
+
+**Impression:**  
+- Model suggests possible consolidation/pneumonia and pleural effusion.  
+- Possible atelectasis and pneumothorax; edema may also be present.  
+
+**Evidence:** (consolidation_pneumonia_001, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2693,data/processed/images_224/2693_IM-1165-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]","[""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055423Z_2693_IM-1165-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette, which may reflect underlying heart strain or dysfunction. Additionally, atelectasis is possible, characterized by increased opacity and potential volume loss in the affected lung area.
+
+**Impression:**
+- Cardiomegaly likely present.
+- Possible atelectasis.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2721,data/processed/images_224/2721_IM-1183-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055426Z_2721_IM-1183-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may warrant further clinical correlation and additional imaging to determine the underlying cause.
+
+**Impression:**
+- Possible cardiomegaly.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2722,data/processed/images_224/2722_IM-1184-1001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055429Z_2722_IM-1184-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular heart disease.
+
+**Impression:**  
+- Model suggests cardiomegaly.  
+- Further clinical correlation and follow-up imaging may be necessary to determine the underlying cause.  
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2728,data/processed/images_224/2728_IM-1187-1001.dcm.png,"[""Atelectasis""]","[""Cardiomegaly"", ""Edema"", ""Atelectasis"", ""Pleural Effusion"", ""Consolidation / Pneumonia""]",[],0.7645325660705566,True,True,False,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055433Z_2728_IM-1187-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, which may indicate an enlarged cardiac silhouette potentially due to underlying heart conditions. Edema is possible, with imaging patterns that may suggest cardiogenic or noncardiogenic origins. Atelectasis and pleural effusion may also be present, indicated by possible blunting of the costophrenic angles and other associated findings. Consolidation or pneumonia may represent additional concerns based on the observed patterns.
+
+**Impression:**  
+- Model suggests cardiomegaly, edema, atelectasis, pleural effusion, and possible consolidation/pneumonia.  
+- Further clinical correlation and follow-up imaging may be warranted.
+
+**Evidence:** (cardiomegaly_001, edema_001, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2738,data/processed/images_224/2738_IM-1192-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]","[""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055436Z_2738_IM-1192-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, atelectasis is possible, which may be associated with volume loss and increased opacity in the affected lung regions.
+
+**Impression:**
+- Model suggests cardiomegaly.
+- Possible atelectasis.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2764,data/processed/images_224/2764_IM-1209-1001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055439Z_2764_IM-1209-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular heart disease.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Further clinical correlation and additional imaging may be necessary for diagnosis.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+277,data/processed/images_224/277_IM-1213-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]","[""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055442Z_277_IM-1213-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, there is a possible consolidation pattern, which may represent an area of lung opacity that could be associated with pneumonia or other causes.
+
+**Impression:**
+- Cardiomegaly likely present.
+- Possible consolidation or pneumonia.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, consolidation_pneumonia_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2789,data/processed/images_224/2789_IM-1223-8001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055444Z_2789_IM-1223-8001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. 
+
+**Impression:**  
+- Possible cardiomegaly. 
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2862,data/processed/images_224/2862_IM-1270-1001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055447Z_2862_IM-1270-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may imply underlying heart strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular heart disease.
+
+**Impression:**
+- Possible cardiomegaly.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2871,data/processed/images_224/2871_IM-1277-1001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055450Z_2871_IM-1277-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular disease.
+
+**Impression:**  
+- Model suggests cardiomegaly.  
+- Further clinical correlation and additional imaging may be necessary to determine the underlying cause.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2884,data/processed/images_224/2884_IM-1286-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055453Z_2884_IM-1286-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may warrant further clinical evaluation to determine the underlying cause.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Further assessment may be needed to clarify the etiology.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2887,data/processed/images_224/2887_IM-1289-4001.dcm.png,"[""Consolidation / Pneumonia"", ""Atelectasis""]","[""Atelectasis""]","[""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055456Z_2887_IM-1289-4001.dcm.json,"**Findings:**  
+Model suggests the presence of atelectasis, which may be indicated by increased opacity and signs of volume loss. There is a borderline possibility of consolidation or pneumonia, characterized by denser lung tissue that may appear whiter than normal aerated lung.
+
+**Impression:**  
+- Model suggests atelectasis.  
+- Possible consolidation or pneumonia.
+
+**Evidence:** (atelectasis_001, atelectasis_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2897,data/processed/images_224/2897_IM-1299-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055458Z_2897_IM-1299-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may warrant further clinical correlation and evaluation.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Follow-up with clinical history and additional imaging may be necessary for further assessment.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2901,data/processed/images_224/2901_IM-1305-1001.dcm.png,"[""Atelectasis""]","[""Atelectasis""]","[""Cardiomegaly"", ""Consolidation / Pneumonia"", ""Pneumothorax""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055502Z_2901_IM-1305-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be indicated by increased opacity and signs of volume loss on the chest X-ray. Borderline findings include possible cardiomegaly, consolidation or pneumonia, and pneumothorax.
+
+**Impression:**
+- Possible atelectasis.
+- Borderline cardiomegaly, consolidation/pneumonia, and pneumothorax.
+
+**Evidence:** (atelectasis_001, atelectasis_002, cardiomegaly_001, cardiomegaly_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2931,data/processed/images_224/2931_IM-1334-1001.dcm.png,"[""Other""]","[""Atelectasis""]","[""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055505Z_2931_IM-1334-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be associated with increased opacity and signs of volume loss. There is a possible indication of consolidation or pneumonia, characterized by denser lung tissue that may reflect inflammatory processes.
+
+**Impression:**
+- Atelectasis likely present.
+- Possible consolidation or pneumonia.
+
+**Evidence:** (atelectasis_001, atelectasis_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2957,data/processed/images_224/2957_IM-1354-1003.dcm.png,"[""Cardiomegaly"", ""Consolidation / Pneumonia"", ""Atelectasis""]","[""Cardiomegaly"", ""Atelectasis""]","[""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055508Z_2957_IM-1354-1003.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette, which may reflect underlying heart strain or dysfunction. Additionally, atelectasis may be present, characterized by increased opacity and potential volume loss in the affected lung region. Consolidation or pneumonia is a possible consideration, with associated opacities that may indicate infection.
+
+**Impression:**  
+- Possible cardiomegaly and atelectasis.  
+- Possible consolidation or pneumonia.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, atelectasis_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2975,data/processed/images_224/2975_IM-1364-1001.dcm.png,"[""Consolidation / Pneumonia"", ""Atelectasis""]","[""Atelectasis"", ""Cardiomegaly"", ""Consolidation / Pneumonia""]","[""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055512Z_2975_IM-1364-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, cardiomegaly, and consolidation or pneumonia. Additionally, a possible pleural effusion may be noted.
+
+**Impression:**
+- Atelectasis, cardiomegaly, and consolidation/pneumonia are the main findings.
+- Possible pleural effusion.
+
+**Evidence:** (atelectasis_001, cardiomegaly_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+2997,data/processed/images_224/2997_IM-1381-2001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]","[""Atelectasis"", ""Edema""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055515Z_2997_IM-1381-2001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. Additionally, borderline findings of atelectasis and edema are possible, which may be associated with volume loss or fluid accumulation.
+
+**Impression:**
+- Cardiomegaly may represent an underlying cardiac condition requiring further evaluation.
+- Atelectasis and edema are possible but warrant correlation with clinical context.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3005,data/processed/images_224/3005_IM-1388-1001.dcm.png,"[""Other""]","[""Consolidation / Pneumonia"", ""Atelectasis"", ""Pneumothorax""]","[""Pleural Effusion"", ""Cardiomegaly""]",0.7645325660705566,True,True,False,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055519Z_3005_IM-1388-1001.dcm.json,"**Findings:**  
+Model suggests possible consolidation or pneumonia, characterized by increased opacity in the lung fields. Atelectasis may represent a pattern of volume loss, potentially indicated by shifts in surrounding structures. Pneumothorax is also a consideration, which may manifest as a visceral pleural line with associated lung retraction. Borderline findings include possible pleural effusion and cardiomegaly.
+
+**Impression:**  
+- Possible consolidation or pneumonia, atelectasis, and pneumothorax.  
+- Borderline findings of pleural effusion and cardiomegaly may warrant further evaluation.
+
+**Evidence:** (consolidation_pneumonia_001, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3032,data/processed/images_224/3032_IM-1407-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055521Z_3032_IM-1407-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette which may reflect underlying heart strain or dysfunction. 
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Further clinical correlation and evaluation may be warranted to determine the underlying cause.  
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3152,data/processed/images_224/3152_IM-1484-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055523Z_3152_IM-1484-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular disease.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Further clinical correlation and additional imaging may be necessary for comprehensive evaluation.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3158,data/processed/images_224/3158_IM-1487-1001.dcm.png,"[""Cardiomegaly"", ""Atelectasis""]","[""Cardiomegaly"", ""Pleural Effusion""]","[""Consolidation / Pneumonia"", ""Atelectasis"", ""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055527Z_3158_IM-1487-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette, which may reflect underlying heart strain or dysfunction. Pleural effusion is also possible, characterized by abnormal fluid accumulation at the lung base, potentially leading to reduced lung expansion.
+
+**Impression:**
+- Possible cardiomegaly.
+- Possible pleural effusion.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3211,data/processed/images_224/3211_IM-1517-1001-0002.dcm.png,"[""Pleural Effusion""]","[""Atelectasis"", ""Pleural Effusion"", ""Consolidation / Pneumonia"", ""Cardiomegaly""]","[""Pneumothorax""]",0.7645325660705566,True,True,False,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055530Z_3211_IM-1517-1001-0002.dcm.json,"**Findings:** Model suggests the presence of atelectasis, pleural effusion, and consolidation or pneumonia on the chest X-ray. Cardiomegaly may represent a possible enlargement of the heart. A borderline finding of pneumothorax is also noted.
+
+**Impression:**
+- Possible atelectasis, pleural effusion, and consolidation/pneumonia.
+- Possible cardiomegaly; borderline observation of pneumothorax.
+
+**Evidence:** (atelectasis_001, pleural_effusion_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3222,data/processed/images_224/3222_IM-1522-1001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]",[],0.7477262616157532,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055533Z_3222_IM-1522-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. 
+
+**Impression:**  
+- Possible cardiomegaly. Follow-up with clinical correlation and further imaging may be warranted.  
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3252,data/processed/images_224/3252_IM-1542-1001.dcm.png,"[""No Finding""]","[""Cardiomegaly""]","[""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055536Z_3252_IM-1542-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying cardiac strain or dysfunction. Additionally, there is a borderline possibility of atelectasis, which may be associated with increased opacity and signs of volume loss.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Borderline atelectasis may represent volume loss in the affected lung area.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3299,data/processed/images_224/3299_IM-1575-1001.dcm.png,"[""Other""]","[""Edema"", ""Cardiomegaly""]","[""Atelectasis"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055539Z_3299_IM-1575-1001.dcm.json,"**Findings:**  
+Model suggests the presence of pulmonary edema and cardiomegaly. Borderline findings may include possible atelectasis and consolidation or pneumonia.
+
+**Impression:**  
+- Possible pulmonary edema and cardiomegaly.  
+- Borderline findings of atelectasis and consolidation may warrant further evaluation.
+
+**Evidence:**  
+(cardiomegaly_002, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3312,data/processed/images_224/3312_IM-1586-1001.dcm.png,"[""Consolidation / Pneumonia""]","[""Cardiomegaly""]","[""Atelectasis"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055542Z_3312_IM-1586-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Borderline findings include possible atelectasis and consolidation or pneumonia, which may manifest as increased opacity and altered lung density.
+
+**Impression:**  
+- Model suggests cardiomegaly.  
+- Possible atelectasis and consolidation/pneumonia.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000, atelectasis_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3327,data/processed/images_224/3327_IM-1593-2001.dcm.png,"[""Other""]","[""Cardiomegaly""]","[""Consolidation / Pneumonia"", ""Atelectasis""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055546Z_3327_IM-1593-2001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may imply underlying heart strain or dysfunction. Additionally, there are borderline observations of possible consolidation or pneumonia, which may represent areas of lung opacity that could indicate inflammatory processes.
+
+**Impression:**
+- Cardiomegaly likely present.
+- Possible consolidation or pneumonia.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, consolidation_pneumonia_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+350,data/processed/images_224/350_IM-1705-0001-0001.dcm.png,"[""Other""]","[""Cardiomegaly"", ""Atelectasis"", ""Consolidation / Pneumonia"", ""Pleural Effusion""]",[],0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055549Z_350_IM-1705-0001-0001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, which may indicate an enlarged cardiac silhouette potentially due to underlying heart conditions. Atelectasis is possible, characterized by increased opacity and potential volume loss in the affected lung region. Consolidation or pneumonia may represent denser lung opacities, possibly associated with infection. Pleural effusion is also suggested, indicating possible fluid accumulation in the pleural space.
+
+**Impression:**  
+- Possible cardiomegaly, atelectasis, consolidation/pneumonia, and pleural effusion.  
+- Further clinical correlation and additional imaging may be necessary for definitive diagnosis.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3519,data/processed/images_224/3519_IM-1717-1001.dcm.png,"[""Pleural Effusion""]","[""Pleural Effusion"", ""Consolidation / Pneumonia"", ""Cardiomegaly"", ""Atelectasis"", ""Edema""]",[],0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055553Z_3519_IM-1717-1001.dcm.json,"**Findings:**  
+Model suggests the presence of pleural effusion, which may be indicated by abnormal fluid at the lung base or in the pleural space. Consolidation or pneumonia may represent a radiographic pattern where normally air-filled lung tissue is filled with material, potentially indicating infection or inflammation. Cardiomegaly may be suggested by an enlarged cardiac silhouette. Atelectasis and edema are also possible findings, indicating lung collapse and fluid accumulation, respectively.
+
+**Impression:**  
+- Model suggests pleural effusion, consolidation/pneumonia, and cardiomegaly.  
+- Possible atelectasis and edema.
+
+**Evidence:** (pleural_effusion_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3565,data/processed/images_224/3565_IM-1750-1001.dcm.png,"[""Consolidation / Pneumonia""]","[""Cardiomegaly""]","[""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055556Z_3565_IM-1750-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, there is a borderline observation of atelectasis, which may be associated with volume loss and increased opacity on the X-ray.
+
+**Impression:**
+- Cardiomegaly is possible and may require further clinical correlation.
+- Atelectasis may represent a lower-confidence finding warranting additional evaluation.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3621,data/processed/images_224/3621_IM-1792-3001.dcm.png,"[""Other""]","[""Consolidation / Pneumonia"", ""Atelectasis"", ""Cardiomegaly"", ""Pleural Effusion"", ""Edema""]",[],0.7645325660705566,True,True,False,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055600Z_3621_IM-1792-3001.dcm.json,"**Findings:** Model suggests consolidation or pneumonia, characterized by increased opacity in the lung fields, which may indicate the presence of inflammatory fluid or other materials. Atelectasis may be present, potentially indicated by volume loss and associated structural changes. Cardiomegaly is possible, suggesting enlargement of the heart silhouette. Pleural effusion may represent fluid accumulation in the pleural space, and edema could indicate fluid in the lung interstitium.
+
+**Impression:**
+- Possible consolidation/pneumonia, atelectasis, cardiomegaly, pleural effusion, and edema.
+
+**Evidence:** (consolidation_pneumonia_001, consolidation_pneumonia_002, atelectasis_001, atelectasis_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3630,data/processed/images_224/3630_IM-1798-4004.dcm.png,"[""Other""]","[""Atelectasis""]","[""Cardiomegaly"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055604Z_3630_IM-1798-4004.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be indicated by increased opacity and signs of volume loss. Additionally, borderline findings of cardiomegaly and consolidation or pneumonia may represent potential underlying conditions requiring further clinical correlation.
+
+**Impression:**
+- Possible atelectasis.
+- Borderline cardiomegaly and consolidation/pneumonia.
+
+**Evidence:** (atelectasis_001, atelectasis_002, cardiomegaly_001, cardiomegaly_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3631,data/processed/images_224/3631_IM-1798-4004.dcm.png,"[""Other""]","[""Consolidation / Pneumonia"", ""Atelectasis"", ""Cardiomegaly""]","[""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055607Z_3631_IM-1798-4004.dcm.json,"**Findings:**  
+Model suggests possible consolidation or pneumonia, characterized by increased opacity in the lung fields, which may indicate the presence of inflammatory fluid or other materials. Additionally, atelectasis may be present, potentially indicated by volume loss and associated structural changes. Cardiomegaly may also be considered based on the heart size relative to the thoracic cavity. A borderline finding of pleural effusion is possible.
+
+**Impression:**  
+- Possible consolidation or pneumonia, atelectasis, and cardiomegaly.  
+- Borderline pleural effusion may represent an additional consideration.
+
+**Evidence:** (consolidation_pneumonia_001, atelectasis_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3681,data/processed/images_224/3681_IM-1833-0001-0002.dcm.png,"[""Other""]","[""Consolidation / Pneumonia""]","[""Cardiomegaly"", ""Atelectasis"", ""Pleural Effusion"", ""Pneumothorax""]",0.7645325660705566,True,True,False,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055611Z_3681_IM-1833-0001-0002.dcm.json,"**Findings:** Model suggests consolidation or pneumonia, characterized by a possible focal or lobar air-space opacity that may appear denser than normally aerated lung (consolidation_pneumonia_001, consolidation_pneumonia_002). Borderline findings include possible cardiomegaly, atelectasis, pleural effusion, and pneumothorax.
+
+**Impression:**
+- Possible consolidation or pneumonia.
+- Borderline cardiomegaly, atelectasis, pleural effusion, and pneumothorax.
+
+**Evidence:** (consolidation_pneumonia_001, consolidation_pneumonia_002, cardiomegaly_001, cardiomegaly_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3688,data/processed/images_224/3688_IM-1839-0001-0001.dcm.png,"[""Pleural Effusion"", ""Atelectasis""]","[""Consolidation / Pneumonia"", ""Atelectasis"", ""Pleural Effusion"", ""Cardiomegaly""]","[""Pneumothorax"", ""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055615Z_3688_IM-1839-0001-0001.dcm.json,"**Findings:**  
+Model suggests possible consolidation or pneumonia, characterized by increased opacity in the lung fields. Atelectasis may represent volume loss with associated signs such as diaphragm elevation or mediastinal shift. Pleural effusion is also possible, indicated by potential fluid accumulation. Cardiomegaly may be present, suggesting heart enlargement. Borderline findings include a possible pneumothorax and edema.
+
+**Impression:**  
+- Possible consolidation/pneumonia, atelectasis, and pleural effusion.  
+- Cardiomegaly noted; pneumothorax and edema are borderline findings.
+
+**Evidence:** (consolidation_pneumonia_001, consolidation_pneumonia_002, atelectasis_001, atelectasis_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+374,data/processed/images_224/374_IM-1868-1001.dcm.png,"[""Cardiomegaly"", ""Pleural Effusion"", ""Consolidation / Pneumonia"", ""Atelectasis""]","[""Cardiomegaly"", ""Atelectasis"", ""Consolidation / Pneumonia""]","[""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055619Z_374_IM-1868-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, which may indicate an enlarged cardiac silhouette potentially due to underlying heart conditions. Atelectasis is also possible, characterized by increased opacity and signs of volume loss. Additionally, consolidation or pneumonia may represent areas of denser lung opacity, potentially indicating infection.
+
+**Impression:**  
+- Possible cardiomegaly, atelectasis, and consolidation/pneumonia.  
+- Borderline pleural effusion may also be considered.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000, atelectasis_001, atelectasis_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3769,data/processed/images_224/3769_IM-1888-4001.dcm.png,"[""Other""]","[""Pneumothorax"", ""Consolidation / Pneumonia"", ""Atelectasis""]","[""Pleural Effusion"", ""Cardiomegaly""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055622Z_3769_IM-1888-4001.dcm.json,"**Findings:**  
+Model suggests the presence of a pneumothorax, characterized by a visible pleural line and potential lung collapse. Consolidation or pneumonia may be indicated by areas of increased opacity, suggesting fluid or inflammatory material in the lung. Atelectasis may also be present, potentially indicated by volume loss in the affected lung region. Borderline findings include possible pleural effusion and cardiomegaly.
+
+**Impression:**  
+- Model suggests pneumothorax, consolidation/pneumonia, and atelectasis as the main findings.  
+- Possible pleural effusion and cardiomegaly noted as lower-confidence observations.
+
+**Evidence:** (pneumothorax_001, consolidation_pneumonia_001, atelectasis_001, pleural_effusion_002, cardiomegaly_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+378,data/processed/images_224/378_IM-1895-4001.dcm.png,"[""Atelectasis""]","[""Atelectasis""]","[""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055625Z_378_IM-1895-4001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be associated with increased opacity and signs of volume loss. There is also a possible indication of consolidation or pneumonia, characterized by denser lung tissue that may appear whiter than normally aerated lung.
+
+**Impression:**
+- Atelectasis likely present.
+- Possible consolidation or pneumonia.
+
+**Evidence:** (atelectasis_001, atelectasis_002, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3799,data/processed/images_224/3799_IM-1911-4001.dcm.png,"[""Atelectasis""]","[""Cardiomegaly""]","[""Atelectasis"", ""Pleural Effusion""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055629Z_3799_IM-1911-4001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, there are borderline observations of atelectasis and pleural effusion, which may indicate volume loss or fluid accumulation in the pleural space.
+
+**Impression:**
+- Possible cardiomegaly.
+- Borderline findings of atelectasis and pleural effusion.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3813,data/processed/images_224/3813_IM-1922-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]","[""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055632Z_3813_IM-1922-1001.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, there is a borderline possibility of atelectasis, which may be associated with increased opacity and signs of volume loss.
+
+**Impression:**
+- Cardiomegaly may represent an underlying cardiac condition requiring further evaluation.
+- Possible atelectasis warrants clinical correlation for appropriate management.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+382,data/processed/images_224/382_IM-1927-1001.dcm.png,"[""Other""]","[""Consolidation / Pneumonia"", ""Atelectasis"", ""Cardiomegaly""]","[""Pleural Effusion"", ""Pneumothorax""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055635Z_382_IM-1927-1001.dcm.json,"**Findings:** Model suggests consolidation or pneumonia, characterized by increased opacity in the lung fields, which may indicate the presence of inflammatory fluid or other materials. Additionally, atelectasis may be present, possibly indicated by signs of volume loss and associated structural changes. Cardiomegaly may also be suggested based on the heart size relative to the thoracic cavity.
+
+**Impression:**
+- Possible consolidation or pneumonia.
+- Possible atelectasis and cardiomegaly.
+
+**Evidence:** (consolidation_pneumonia_001, consolidation_pneumonia_002, atelectasis_001, atelectasis_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3824,data/processed/images_224/3824_IM-1931-1001.dcm.png,"[""Consolidation / Pneumonia""]","[""Consolidation / Pneumonia"", ""Pleural Effusion"", ""Pneumothorax"", ""Atelectasis""]","[""Cardiomegaly"", ""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055639Z_3824_IM-1931-1001.dcm.json,"**Findings:**  
+Model suggests possible consolidation or pneumonia, indicated by a pattern of increased opacity in the lung fields. There may also be a pleural effusion, characterized by blunting of the costophrenic angles. Additionally, a pneumothorax may be present, along with possible atelectasis. Borderline findings include potential cardiomegaly and edema.
+
+**Impression:**  
+- Possible consolidation/pneumonia and pleural effusion.  
+- Possible pneumothorax and atelectasis.  
+
+**Evidence:** (consolidation_pneumonia_001, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3825,data/processed/images_224/3825_IM-1931-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055642Z_3825_IM-1931-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular heart disease.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Further clinical correlation and additional imaging may be necessary for diagnosis.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3848,data/processed/images_224/3848_IM-1946-1001-0001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly"", ""Pleural Effusion"", ""Consolidation / Pneumonia"", ""Edema""]","[""Atelectasis"", ""Pneumothorax""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055646Z_3848_IM-1946-1001-0001.dcm.json,"**Findings:** Model suggests cardiomegaly, which may indicate an enlarged cardiac silhouette potentially due to underlying heart conditions. Pleural effusion is possible, characterized by abnormal fluid at the lung base or in the pleural space. Consolidation or pneumonia may represent an area of lung infection or inflammation. Edema is also possible, indicating fluid accumulation in lung tissue.
+
+**Impression:**
+- Possible cardiomegaly, pleural effusion, consolidation/pneumonia, and edema.
+- Borderline findings of atelectasis and pneumothorax may also be considered.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, pleural_effusion_002, pleural_effusion_003)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3870,data/processed/images_224/3870_IM-1963-4001.dcm.png,"[""Pleural Effusion""]","[""Consolidation / Pneumonia"", ""Pleural Effusion"", ""Atelectasis""]","[""Cardiomegaly"", ""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055649Z_3870_IM-1963-4001.dcm.json,"**Findings:** Model suggests consolidation or pneumonia, likely indicated by denser opacities in the lung fields. Possible pleural effusion may be present, characterized by blunting of the costophrenic angles. Atelectasis may represent areas of lung collapse. Borderline findings include possible cardiomegaly and edema.
+
+**Impression:**
+- Consolidation or pneumonia, pleural effusion, and atelectasis are high-confidence findings.
+- Cardiomegaly and edema are lower-confidence observations.
+
+**Evidence:** (consolidation_pneumonia_001, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3878,data/processed/images_224/3878_IM-1968-1001.dcm.png,"[""Cardiomegaly"", ""Consolidation / Pneumonia""]","[""Atelectasis"", ""Cardiomegaly""]","[""Consolidation / Pneumonia"", ""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055652Z_3878_IM-1968-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis and cardiomegaly. Possible consolidation or pneumonia and pleural effusion may also be indicated.
+
+**Impression:**
+- Atelectasis and cardiomegaly may represent significant underlying conditions.
+- Possible consolidation/pneumonia and pleural effusion warrant further clinical correlation.
+
+**Evidence:** (atelectasis_001, cardiomegaly_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3892,data/processed/images_224/3892_IM-1974-0001-0001.dcm.png,"[""Consolidation / Pneumonia""]","[""Atelectasis"", ""Pleural Effusion"", ""Cardiomegaly"", ""Pneumothorax""]","[""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055656Z_3892_IM-1974-0001-0001.dcm.json,"**Findings:**  
+Model suggests possible atelectasis, which may be indicated by increased opacity and signs of volume loss. Pleural effusion may represent abnormal fluid accumulation at the lung base, potentially blunting the costophrenic angle. Cardiomegaly is suggested, possibly indicating an enlarged heart. Pneumothorax may be indicated, potentially associated with air in the pleural space. Consolidation or pneumonia may represent denser lung opacity, but further clinical correlation is needed.
+
+**Impression:**  
+- Possible atelectasis, pleural effusion, cardiomegaly, and pneumothorax.  
+- Consolidation or pneumonia may be present, warranting further evaluation.  
+
+**Evidence:** (atelectasis_001, pleural_effusion_002, cardiomegaly, pneumothorax, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3941,data/processed/images_224/3941_IM-2012-0001-0002.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly"", ""Edema""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055659Z_3941_IM-2012-0001-0002.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, edema may be present, potentially contributing to respiratory symptoms and characterized by increased vascular markings or air-space opacities.
+
+**Impression:**
+- Possible cardiomegaly.
+- Possible edema.
+
+**Evidence:** (cardiomegaly_001, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3980,data/processed/images_224/3980_IM-2039-1001.dcm.png,"[""Cardiomegaly"", ""Pleural Effusion""]","[""Atelectasis"", ""Consolidation / Pneumonia"", ""Pleural Effusion""]","[""Cardiomegaly""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055702Z_3980_IM-2039-1001.dcm.json,"**Findings:**  
+Model suggests the presence of atelectasis, which may be indicated by increased opacity and signs of volume loss. Additionally, consolidation or pneumonia may be present, characterized by denser lung tissue that could represent inflammatory fluid or other materials filling the air spaces. Possible pleural effusion may also be indicated. Cardiomegaly is a lower-confidence observation.
+
+**Impression:**  
+- Model suggests atelectasis, consolidation/pneumonia, and possible pleural effusion.  
+- Cardiomegaly may represent a borderline finding.
+
+**Evidence:** (atelectasis_001, consolidation_pneumonia_001, pleural_effusion, cardiomegaly)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+3997,data/processed/images_224/3997_IM-2048-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055705Z_3997_IM-2048-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. This finding may warrant further clinical correlation and additional diagnostic evaluation to determine the underlying cause.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- No other significant findings noted.  
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+4,data/processed/images_224/4_IM-2050-1001.dcm.png,"[""Other""]","[""Pneumothorax""]","[""Atelectasis"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055708Z_4_IM-2050-1001.dcm.json,"**Findings:** Model suggests a possible pneumothorax, characterized by a visible pleural line and absence of lung markings beyond that line. Borderline findings include possible atelectasis and consolidation/pneumonia, which may present as increased opacity and density in the lung fields.
+
+**Impression:**
+- Possible pneumothorax.
+- Borderline findings of atelectasis and consolidation/pneumonia.
+
+**Evidence:** (pneumothorax_001, pneumothorax_002, atelectasis_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+43,data/processed/images_224/43_IM-2070-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055711Z_43_IM-2070-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. 
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Further clinical correlation and additional imaging may be necessary for diagnosis.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+436,data/processed/images_224/436_IM-2076-1001-0002.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly""]","[""Atelectasis""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055714Z_436_IM-2076-1001-0002.dcm.json,"**Findings:** The model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Additionally, there is a possible indication of atelectasis, which may be associated with volume loss or airway obstruction.
+
+**Impression:**
+- Cardiomegaly may represent an underlying cardiac condition requiring further evaluation.
+- Atelectasis is a possible finding that should be correlated with clinical context.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, atelectasis_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+491,data/processed/images_224/491_IM-2111-1001.dcm.png,"[""Atelectasis""]","[""Atelectasis""]","[""Cardiomegaly"", ""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055717Z_491_IM-2111-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, which may be indicated by increased opacity and signs of volume loss. Borderline findings include possible cardiomegaly and consolidation or pneumonia, which may appear as denser areas in the lung fields.
+
+**Impression:**
+- Possible atelectasis.
+- Borderline cardiomegaly and consolidation/pneumonia.
+
+**Evidence:** (atelectasis_001, atelectasis_002, cardiomegaly_001, cardiomegaly_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+50,data/processed/images_224/50_IM-2118-2001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly"", ""Atelectasis"", ""Consolidation / Pneumonia""]","[""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055721Z_50_IM-2118-2001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, which may indicate an enlarged cardiac silhouette potentially due to underlying heart conditions. Atelectasis is possible, characterized by increased opacity and potential volume loss in the affected lung area. Consolidation or pneumonia may represent denser lung opacities, possibly associated with infection. Edema may also be a consideration, although with lower confidence.
+
+**Impression:**  
+- Model suggests cardiomegaly, atelectasis, and consolidation/pneumonia as primary findings.  
+- Possible edema noted as a lower-confidence observation.
+
+**Evidence:**  
+(cardiomegaly_001, cardiomegaly_002, cardiomegaly_000, atelectasis_001, atelectasis_002, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+596,data/processed/images_224/596_IM-2188-26001.dcm.png,"[""Other""]","[""Cardiomegaly""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055724Z_596_IM-2188-26001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may imply underlying heart strain or dysfunction. This finding may be associated with conditions such as heart failure, hypertension, or valvular disease.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Further clinical correlation and follow-up imaging may be necessary to determine the underlying cause.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, cardiomegaly_000)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+616,data/processed/images_224/616_IM-2200-1001.dcm.png,"[""Other""]","[""Consolidation / Pneumonia"", ""Cardiomegaly""]","[""Pneumothorax"", ""Edema"", ""Pleural Effusion"", ""Atelectasis""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055727Z_616_IM-2200-1001.dcm.json,"**Findings:**  
+Model suggests consolidation or pneumonia, characterized by areas of increased opacity in the lung fields, which may indicate the presence of inflammatory fluid or other materials in the air spaces. Additionally, cardiomegaly may represent an enlarged cardiac silhouette, potentially indicating underlying heart strain or dysfunction.
+
+**Impression:**  
+- Possible consolidation/pneumonia.  
+- Possible cardiomegaly.
+
+**Evidence:** (consolidation_pneumonia_001, cardiomegaly_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+665,data/processed/images_224/665_IM-2240-1001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly""]","[""Edema""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055730Z_665_IM-2240-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Edema may represent a possible presence of pulmonary edema, which can manifest as increased vascular markings or other patterns on the chest X-ray.
+
+**Impression:**
+- Cardiomegaly likely present.
+- Possible pulmonary edema.
+
+**Evidence:** (cardiomegaly_001, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+677,data/processed/images_224/677_IM-2249-1001.dcm.png,"[""Pleural Effusion"", ""Consolidation / Pneumonia""]","[""Consolidation / Pneumonia"", ""Pleural Effusion"", ""Atelectasis""]","[""Cardiomegaly"", ""Edema""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055734Z_677_IM-2249-1001.dcm.json,"**Findings:**  
+Model suggests consolidation or pneumonia, characterized by a possible focal or lobar air-space opacity that may appear denser than normal aerated lung (consolidation_pneumonia_001, consolidation_pneumonia_002). Additionally, pleural effusion may be indicated by abnormal fluid at the lung base, potentially leading to blunting of the costophrenic angle (pleural_effusion_002). Atelectasis may also be present, suggesting areas of lung collapse (not specifically cited but inferred from high confidence). 
+
+**Impression:**  
+- Possible consolidation or pneumonia.  
+- Possible pleural effusion.  
+- Possible atelectasis.  
+
+**Evidence:** (consolidation_pneumonia_001, consolidation_pneumonia_002, pleural_effusion_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+702,data/processed/images_224/702_IM-2267-1001.dcm.png,"[""Pleural Effusion"", ""Atelectasis""]","[""Pleural Effusion"", ""Atelectasis"", ""Consolidation / Pneumonia"", ""Cardiomegaly""]",[],0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055739Z_702_IM-2267-1001.dcm.json,"**Findings:**  
+Model suggests the presence of pleural effusion, which may be indicated by abnormal fluid at the lung base or in the pleural space. Atelectasis may represent volume loss with associated increased opacity. Consolidation or pneumonia may be indicated by denser areas within the lung fields. Cardiomegaly may be suggested by an enlarged cardiac silhouette.
+
+**Impression:**  
+- Possible pleural effusion, atelectasis, consolidation/pneumonia, and cardiomegaly.  
+- Further clinical correlation is recommended for definitive diagnosis.
+
+**Evidence:** (pleural_effusion_002, pleural_effusion_003, atelectasis_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+729,data/processed/images_224/729_IM-2288-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]","[""Edema""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055741Z_729_IM-2288-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette, which may reflect underlying heart strain or dysfunction. Edema may represent a possible presence of pulmonary edema, characterized by increased vascular markings or other associated patterns.
+
+**Impression:**
+- Cardiomegaly likely present.
+- Possible pulmonary edema.
+
+**Evidence:** (cardiomegaly_001, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+73,data/processed/images_224/73_IM-2289-1001.dcm.png,"[""Pleural Effusion"", ""Atelectasis""]","[""Atelectasis"", ""Pleural Effusion""]","[""Pneumothorax""]",0.7357231378555298,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055744Z_73_IM-2289-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, likely indicated by increased opacity and possible volume loss. Additionally, pleural effusion may represent abnormal fluid accumulation at the lung base, potentially blunting the costophrenic angle. A pneumothorax is also possible, though with lower confidence.
+
+**Impression:**
+- Possible atelectasis and pleural effusion.
+- Possible pneumothorax.
+
+**Evidence:** (atelectasis_001, pleural_effusion_002, pneumothorax_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+745,data/processed/images_224/745_IM-2299-1001.dcm.png,"[""Other""]","[""Cardiomegaly"", ""Edema""]",[],0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055747Z_745_IM-2299-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette, which may reflect underlying heart strain or dysfunction. Additionally, edema may be present, potentially contributing to respiratory symptoms such as shortness of breath and cough.
+
+**Impression:**
+- Possible cardiomegaly.
+- Possible edema.
+
+**Evidence:** (cardiomegaly_001, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+797,data/processed/images_224/797_IM-2332-1001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly"", ""Edema""]","[""Consolidation / Pneumonia""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055750Z_797_IM-2332-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Edema is also possible, which may manifest as increased vascular markings or other patterns on the X-ray. Consolidation or pneumonia may represent a borderline finding.
+
+**Impression:**
+- Possible cardiomegaly and edema.
+- Borderline consolidation or pneumonia.
+
+**Evidence:** (cardiomegaly_001, cardiomegaly_002, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+808,data/processed/images_224/808_IM-2341-2001.dcm.png,"[""Consolidation / Pneumonia"", ""Atelectasis""]","[""Edema"", ""Cardiomegaly"", ""Pleural Effusion"", ""Consolidation / Pneumonia"", ""Atelectasis""]",[],0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055754Z_808_IM-2341-2001.dcm.json,"**Findings:**  
+Model suggests the presence of pulmonary edema, which may be indicated by increased vascular markings and potential pleural effusions. Cardiomegaly may represent an enlarged cardiac silhouette, possibly indicating underlying heart strain. Pleural effusion is possible, with potential blunting of the costophrenic angles. Consolidation or pneumonia may also be present, indicated by patchy alveolar opacities. Atelectasis may represent areas of lung collapse.
+
+**Impression:**  
+- Model suggests pulmonary edema, cardiomegaly, pleural effusion, consolidation/pneumonia, and atelectasis.  
+- Further clinical correlation and follow-up imaging may be necessary for definitive diagnosis.
+
+**Evidence:** (edema_001, pleural_effusion_002, cardiomegaly_001, cardiomegaly_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+825,data/processed/images_224/825_IM-2355-1001.dcm.png,"[""Cardiomegaly"", ""Consolidation / Pneumonia"", ""Atelectasis""]","[""Atelectasis"", ""Consolidation / Pneumonia"", ""Cardiomegaly""]","[""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055757Z_825_IM-2355-1001.dcm.json,"**Findings:** Model suggests the presence of atelectasis, consolidation or pneumonia, and cardiomegaly. A possible pleural effusion may also be noted.
+
+**Impression:**
+- Possible atelectasis, consolidation/pneumonia, and cardiomegaly.
+- Possible pleural effusion.
+
+**Evidence:** (atelectasis_001, consolidation_pneumonia_001, consolidation_pneumonia_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+856,data/processed/images_224/856_IM-2377-1001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly""]","[""Edema""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055800Z_856_IM-2377-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Edema may represent a possible presence of fluid accumulation in the lungs, although the specific cause cannot be determined from the chest X-ray alone.
+
+**Impression:**
+- Cardiomegaly likely present.
+- Possible edema.
+
+**Evidence:** (cardiomegaly_001, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+859,data/processed/images_224/859_IM-2380-1001.dcm.png,"[""Atelectasis""]","[""Consolidation / Pneumonia""]","[""Atelectasis"", ""Cardiomegaly"", ""Pleural Effusion""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055803Z_859_IM-2380-1001.dcm.json,"**Findings:** Model suggests consolidation or pneumonia, characterized by increased opacity in the lung fields, which may indicate the presence of inflammatory fluid or other materials filling the normally air-filled lung tissue. Borderline findings include possible atelectasis, cardiomegaly, and pleural effusion.
+
+**Impression:**
+- Possible consolidation/pneumonia.
+- Borderline findings of atelectasis, cardiomegaly, and pleural effusion.
+
+**Evidence:** (consolidation_pneumonia_001, consolidation_pneumonia_002, atelectasis_001, atelectasis_002)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+869,data/processed/images_224/869_IM-2389-2001.dcm.png,"[""No Finding""]","[""Atelectasis"", ""Consolidation / Pneumonia""]",[],0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055806Z_869_IM-2389-2001.dcm.json,"**Findings:**  
+Model suggests the presence of atelectasis, which may be associated with increased opacity and signs of volume loss. Additionally, model suggests consolidation or pneumonia, characterized by denser lung tissue that may indicate inflammatory processes.
+
+**Impression:**  
+- Possible atelectasis.  
+- Possible consolidation or pneumonia.
+
+**Evidence:**  
+(citations: [atelectasis_001], [atelectasis_002], [consolidation_pneumonia_001], [consolidation_pneumonia_002])
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+981,data/processed/images_224/981_IM-2469-1001.dcm.png,"[""Cardiomegaly""]","[""Cardiomegaly"", ""Edema""]","[""Consolidation / Pneumonia"", ""Atelectasis""]",0.7645325660705566,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055810Z_981_IM-2469-1001.dcm.json,"**Findings:**  
+Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette, which may reflect underlying heart strain or dysfunction. Model also suggests edema, which could manifest as increased vascular markings or other patterns on the chest X-ray.
+
+**Impression:**  
+- Possible cardiomegaly.  
+- Possible pulmonary edema.  
+
+**Evidence:** (cardiomegaly_001, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+991,data/processed/images_224/991_IM-2476-1001.dcm.png,"[""Other""]","[""Cardiomegaly""]","[""Edema""]",0.7477215528488159,True,True,True,True,E:\Project\RadScribe\outputs\agent\traces\20260822T055812Z_991_IM-2476-1001.dcm.json,"**Findings:** Model suggests cardiomegaly, indicated by an enlarged cardiac silhouette that may reflect underlying heart strain or dysfunction. Edema may represent a possible presence, with imaging patterns that could suggest either cardiogenic or noncardiogenic origins.
+
+**Impression:**
+- Cardiomegaly likely present.
+- Possible edema.
+
+**Evidence:** (cardiomegaly_001, edema_001)
+
+Educational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."

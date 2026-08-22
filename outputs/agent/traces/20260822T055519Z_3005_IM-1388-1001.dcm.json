@@ -1,0 +1,476 @@
+{
+  "image_path": "e:\\Project\\RadScribe\\data\\processed\\images_224\\3005_IM-1388-1001.dcm.png",
+  "question": null,
+  "guardrail_passed": true,
+  "guardrail_reason": "input image file is readable",
+  "vision_predictions": [
+    {
+      "finding": "Consolidation / Pneumonia",
+      "probability": 0.7292684316635132
+    },
+    {
+      "finding": "Atelectasis",
+      "probability": 0.7124266028404236
+    },
+    {
+      "finding": "Pneumothorax",
+      "probability": 0.7000371813774109
+    },
+    {
+      "finding": "Pleural Effusion",
+      "probability": 0.5690923929214478
+    },
+    {
+      "finding": "Cardiomegaly",
+      "probability": 0.5377238392829895
+    },
+    {
+      "finding": "Edema",
+      "probability": 0.1226113885641098
+    }
+  ],
+  "main_findings": [
+    "Consolidation / Pneumonia",
+    "Atelectasis",
+    "Pneumothorax"
+  ],
+  "borderline_findings": [
+    "Pleural Effusion",
+    "Cardiomegaly"
+  ],
+  "retrieval_findings": [
+    "Consolidation / Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Cardiomegaly"
+  ],
+  "vision_status": "high_confidence",
+  "evidence": [
+    {
+      "query_finding": "Consolidation / Pneumonia",
+      "confidence_group": "main",
+      "vision_probability": 0.7292684316635132,
+      "rank": 1,
+      "chunk_id": "consolidation_pneumonia_001",
+      "text": "Consolidation is a radiographic pattern where normally air-filled lung tissue becomes filled with material such as inflammatory fluid, pus, blood, edema, or other liquid. Pneumonia is one common cause of consolidation, but consolidation itself is an imaging sign and does not prove one exact cause by itself. On chest X-ray, consolidation can appear as a focal or lobar air-space opacity. It may look denser or whiter than normal aerated lung.",
+      "finding": "Consolidation / Pneumonia",
+      "score": 0.7645325660705566,
+      "distance": 0.23546743392944336,
+      "provider": "openai",
+      "source_ids": [
+        "consolidation_pneumonia_cdc",
+        "consolidation_pneumonia_wikipedia"
+      ],
+      "source_titles": [
+        "About Pneumonia",
+        "Pulmonary consolidation"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/pneumonia/about/index.html",
+        "https://en.wikipedia.org/wiki/Pulmonary_consolidation"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Consolidation / Pneumonia",
+      "confidence_group": "main",
+      "vision_probability": 0.7292684316635132,
+      "rank": 2,
+      "chunk_id": "consolidation_pneumonia_002",
+      "text": "It may look denser or whiter than normal aerated lung. In pneumonia, the opacity may match the infected region, and air bronchograms can sometimes be seen when air-filled bronchi remain visible within surrounding opacified lung. Consolidation should be described as an imaging pattern and interpreted with symptoms, history, and other clinical information. The report should describe the opacity pattern and avoid claiming the organism or exact diagnosis from the X-ray alone.",
+      "finding": "Consolidation / Pneumonia",
+      "score": 0.7098040580749512,
+      "distance": 0.29019594192504883,
+      "provider": "openai",
+      "source_ids": [
+        "consolidation_pneumonia_cdc",
+        "consolidation_pneumonia_wikipedia"
+      ],
+      "source_titles": [
+        "About Pneumonia",
+        "Pulmonary consolidation"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/pneumonia/about/index.html",
+        "https://en.wikipedia.org/wiki/Pulmonary_consolidation"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Consolidation / Pneumonia",
+      "confidence_group": "main",
+      "vision_probability": 0.7292684316635132,
+      "rank": 3,
+      "chunk_id": "consolidation_pneumonia_000",
+      "text": "Pneumonia is an infection of the lungs. It can be caused by bacteria, viruses, fungi, or less common organisms. Symptoms may include cough, fever or chills, chest pain with breathing or coughing, tiredness, and shortness of breath. Consolidation is a radiographic pattern where normally air-filled lung tissue becomes filled with material such as inflammatory fluid, pus, blood, edema, or other liquid.",
+      "finding": "Consolidation / Pneumonia",
+      "score": 0.6160313487052917,
+      "distance": 0.38396865129470825,
+      "provider": "openai",
+      "source_ids": [
+        "consolidation_pneumonia_cdc",
+        "consolidation_pneumonia_wikipedia"
+      ],
+      "source_titles": [
+        "About Pneumonia",
+        "Pulmonary consolidation"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/pneumonia/about/index.html",
+        "https://en.wikipedia.org/wiki/Pulmonary_consolidation"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Atelectasis",
+      "confidence_group": "main",
+      "vision_probability": 0.7124266028404236,
+      "rank": 1,
+      "chunk_id": "atelectasis_001",
+      "text": "Atelectasis can happen for several reasons, including airway blockage, compression from nearby fluid or air, shallow breathing, or postoperative changes. Small areas may cause few symptoms, while larger areas can be associated with shortness of breath, faster breathing, low oxygen, or reduced movement on the affected side. On chest X-ray, atelectasis is often considered when there is increased opacity together with signs of volume loss. Depending on the location, this may include crowding of nearby structures, elevation of the diaphragm, shift of fissures, or movement of the mediastinum toward the affected side.",
+      "finding": "Atelectasis",
+      "score": 0.636799693107605,
+      "distance": 0.363200306892395,
+      "provider": "openai",
+      "source_ids": [
+        "atelectasis_wikipedia"
+      ],
+      "source_titles": [
+        "Atelectasis"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Atelectasis"
+      ],
+      "licences": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Atelectasis",
+      "confidence_group": "main",
+      "vision_probability": 0.7124266028404236,
+      "rank": 2,
+      "chunk_id": "atelectasis_002",
+      "text": "Depending on the location, this may include crowding of nearby structures, elevation of the diaphragm, shift of fissures, or movement of the mediastinum toward the affected side. Atelectasis should be described as an imaging finding and interpreted with the clinical situation. A report should avoid assuming the exact cause unless the image or history clearly supports it.",
+      "finding": "Atelectasis",
+      "score": 0.5835543274879456,
+      "distance": 0.41644567251205444,
+      "provider": "openai",
+      "source_ids": [
+        "atelectasis_wikipedia"
+      ],
+      "source_titles": [
+        "Atelectasis"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Atelectasis"
+      ],
+      "licences": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Atelectasis",
+      "confidence_group": "main",
+      "vision_probability": 0.7124266028404236,
+      "rank": 3,
+      "chunk_id": "consolidation_pneumonia_002",
+      "text": "It may look denser or whiter than normal aerated lung. In pneumonia, the opacity may match the infected region, and air bronchograms can sometimes be seen when air-filled bronchi remain visible within surrounding opacified lung. Consolidation should be described as an imaging pattern and interpreted with symptoms, history, and other clinical information. The report should describe the opacity pattern and avoid claiming the organism or exact diagnosis from the X-ray alone.",
+      "finding": "Consolidation / Pneumonia",
+      "score": 0.5627721548080444,
+      "distance": 0.43722784519195557,
+      "provider": "openai",
+      "source_ids": [
+        "consolidation_pneumonia_cdc",
+        "consolidation_pneumonia_wikipedia"
+      ],
+      "source_titles": [
+        "About Pneumonia",
+        "Pulmonary consolidation"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/pneumonia/about/index.html",
+        "https://en.wikipedia.org/wiki/Pulmonary_consolidation"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Pneumothorax",
+      "confidence_group": "main",
+      "vision_probability": 0.7000371813774109,
+      "rank": 1,
+      "chunk_id": "pneumothorax_001",
+      "text": "A tension pneumothorax is especially important because pressure can build up enough to affect the heart, lungs, blood flow, and blood pressure. On chest X-ray, pneumothorax is usually considered when a visible pleural line separates the collapsed lung edge from the chest wall, with absent lung markings beyond that line. Larger cases may show a more obvious collapsed lung. Tension physiology may be suggested by mediastinal shift or other signs of pressure effect, but clinical urgency should not wait for perfect imaging wording.",
+      "finding": "Pneumothorax",
+      "score": 0.6602978110313416,
+      "distance": 0.33970218896865845,
+      "provider": "openai",
+      "source_ids": [
+        "pneumothorax_nhlbi",
+        "pneumothorax_wikipedia"
+      ],
+      "source_titles": [
+        "Pleural Disorders - Pleurisy, Pleural Effusion, and Pneumothorax",
+        "Pneumothorax"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/pleural-disorders/types",
+        "https://en.wikipedia.org/wiki/Pneumothorax"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Pneumothorax",
+      "confidence_group": "main",
+      "vision_probability": 0.7000371813774109,
+      "rank": 2,
+      "chunk_id": "pneumothorax_002",
+      "text": "Tension physiology may be suggested by mediastinal shift or other signs of pressure effect, but clinical urgency should not wait for perfect imaging wording. Pneumothorax is an important finding because it can explain sudden chest pain or shortness of breath and may require urgent action. A report should clearly describe the side and approximate size when visible.",
+      "finding": "Pneumothorax",
+      "score": 0.5974477529525757,
+      "distance": 0.4025522470474243,
+      "provider": "openai",
+      "source_ids": [
+        "pneumothorax_nhlbi",
+        "pneumothorax_wikipedia"
+      ],
+      "source_titles": [
+        "Pleural Disorders - Pleurisy, Pleural Effusion, and Pneumothorax",
+        "Pneumothorax"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/pleural-disorders/types",
+        "https://en.wikipedia.org/wiki/Pneumothorax"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Pneumothorax",
+      "confidence_group": "main",
+      "vision_probability": 0.7000371813774109,
+      "rank": 3,
+      "chunk_id": "pleural_effusion_002",
+      "text": "On chest X-ray, pleural effusion is usually considered when there is abnormal fluid at the lung base or in the pleural space. It may appear with blunting of the costophrenic angle, dependent layering fluid, or a horizontal air-fluid level if both air and fluid are present. Lateral decubitus views can show smaller amounts of fluid than an upright chest X-ray. Pleural effusion matters because it can reduce lung expansion and may be associated with shortness of breath, chest pain, or cough.",
+      "finding": "Pleural Effusion",
+      "score": 0.5946837067604065,
+      "distance": 0.4053162932395935,
+      "provider": "openai",
+      "source_ids": [
+        "pleural_effusion_nhlbi",
+        "pleural_effusion_wikipedia"
+      ],
+      "source_titles": [
+        "Pleural Disorders - Pleurisy, Pleural Effusion, and Pneumothorax",
+        "Pleural effusion"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/pleural-disorders/types",
+        "https://en.wikipedia.org/wiki/Pleural_effusion"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Pleural Effusion",
+      "confidence_group": "borderline",
+      "vision_probability": 0.5690923929214478,
+      "rank": 1,
+      "chunk_id": "pleural_effusion_002",
+      "text": "On chest X-ray, pleural effusion is usually considered when there is abnormal fluid at the lung base or in the pleural space. It may appear with blunting of the costophrenic angle, dependent layering fluid, or a horizontal air-fluid level if both air and fluid are present. Lateral decubitus views can show smaller amounts of fluid than an upright chest X-ray. Pleural effusion matters because it can reduce lung expansion and may be associated with shortness of breath, chest pain, or cough.",
+      "finding": "Pleural Effusion",
+      "score": 0.7357231378555298,
+      "distance": 0.2642768621444702,
+      "provider": "openai",
+      "source_ids": [
+        "pleural_effusion_nhlbi",
+        "pleural_effusion_wikipedia"
+      ],
+      "source_titles": [
+        "Pleural Disorders - Pleurisy, Pleural Effusion, and Pneumothorax",
+        "Pleural effusion"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/pleural-disorders/types",
+        "https://en.wikipedia.org/wiki/Pleural_effusion"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Pleural Effusion",
+      "confidence_group": "borderline",
+      "vision_probability": 0.5690923929214478,
+      "rank": 2,
+      "chunk_id": "pleural_effusion_003",
+      "text": "Pleural effusion matters because it can reduce lung expansion and may be associated with shortness of breath, chest pain, or cough. The report should describe the imaging finding carefully without pretending to know the exact cause from the X-ray alone.",
+      "finding": "Pleural Effusion",
+      "score": 0.6887479424476624,
+      "distance": 0.31125205755233765,
+      "provider": "openai",
+      "source_ids": [
+        "pleural_effusion_nhlbi",
+        "pleural_effusion_wikipedia"
+      ],
+      "source_titles": [
+        "Pleural Disorders - Pleurisy, Pleural Effusion, and Pneumothorax",
+        "Pleural effusion"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/pleural-disorders/types",
+        "https://en.wikipedia.org/wiki/Pleural_effusion"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Pleural Effusion",
+      "confidence_group": "borderline",
+      "vision_probability": 0.5690923929214478,
+      "rank": 3,
+      "chunk_id": "pleural_effusion_001",
+      "text": "Inflammatory causes, infection, tumors, or lung injury can lead to an exudative effusion. Pressure-related causes, such as heart, kidney, or liver failure, can lead to a transudative effusion. The cause matters because the same X-ray finding can come from different underlying problems. On chest X-ray, pleural effusion is usually considered when there is abnormal fluid at the lung base or in the pleural space.",
+      "finding": "Pleural Effusion",
+      "score": 0.6268494129180908,
+      "distance": 0.3731505870819092,
+      "provider": "openai",
+      "source_ids": [
+        "pleural_effusion_nhlbi",
+        "pleural_effusion_wikipedia"
+      ],
+      "source_titles": [
+        "Pleural Disorders - Pleurisy, Pleural Effusion, and Pneumothorax",
+        "Pleural effusion"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/pleural-disorders/types",
+        "https://en.wikipedia.org/wiki/Pleural_effusion"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "borderline",
+      "vision_probability": 0.5377238392829895,
+      "rank": 1,
+      "chunk_id": "cardiomegaly_001",
+      "text": "The finding matters because an enlarged cardiac silhouette can be a clue that the heart is under strain or not pumping normally. Heart failure can cause symptoms such as tiredness, shortness of breath, and fluid buildup in the body, although the exact cause cannot be decided from a chest X-ray alone. On a chest X-ray, cardiomegaly is usually considered when the cardiac silhouette is larger than expected compared with the chest. A common measurement is the cardiothoracic ratio on a PA chest radiograph; a ratio above about 50 percent can suggest enlargement.",
+      "finding": "Cardiomegaly",
+      "score": 0.7477215528488159,
+      "distance": 0.2522784471511841,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "borderline",
+      "vision_probability": 0.5377238392829895,
+      "rank": 2,
+      "chunk_id": "cardiomegaly_002",
+      "text": "A common measurement is the cardiothoracic ratio on a PA chest radiograph; a ratio above about 50 percent can suggest enlargement. Portable AP views can exaggerate heart size, so the report should describe the finding carefully and consider image technique. Cardiomegaly should be reported as an imaging observation, not as a full diagnosis. Follow-up with clinical history, prior imaging, echocardiography, or other tests may be needed to understand the cause.",
+      "finding": "Cardiomegaly",
+      "score": 0.7098684906959534,
+      "distance": 0.29013150930404663,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    },
+    {
+      "query_finding": "Cardiomegaly",
+      "confidence_group": "borderline",
+      "vision_probability": 0.5377238392829895,
+      "rank": 3,
+      "chunk_id": "cardiomegaly_000",
+      "text": "Cardiomegaly means the heart appears enlarged. It is not a single disease by itself; it is a finding that can happen when the heart has changed because of another condition. Common associated problems can include high blood pressure, heart valve disease, coronary artery disease, cardiomyopathy, or heart failure. The finding matters because an enlarged cardiac silhouette can be a clue that the heart is under strain or not pumping normally.",
+      "finding": "Cardiomegaly",
+      "score": 0.7052236795425415,
+      "distance": 0.2947763204574585,
+      "provider": "openai",
+      "source_ids": [
+        "cardiomegaly_nhlbi",
+        "cardiomegaly_wikipedia"
+      ],
+      "source_titles": [
+        "Heart Failure - What Is Heart Failure?",
+        "Cardiomegaly"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/heart-failure",
+        "https://en.wikipedia.org/wiki/Cardiomegaly"
+      ],
+      "licences": [
+        "Public-Domain",
+        "CC-BY-SA-4.0"
+      ]
+    }
+  ],
+  "best_retrieval_score": 0.7645325660705566,
+  "retrieval_ok": true,
+  "can_draft": true,
+  "draft_report": "**Findings:**  \nModel suggests possible consolidation or pneumonia, characterized by increased opacity in the lung fields. Atelectasis may represent a pattern of volume loss, potentially indicated by shifts in surrounding structures. Pneumothorax is also a consideration, which may manifest as a visceral pleural line with associated lung retraction. Borderline findings include possible pleural effusion and cardiomegaly.\n\n**Impression:**  \n- Possible consolidation or pneumonia, atelectasis, and pneumothorax.  \n- Borderline findings of pleural effusion and cardiomegaly may warrant further evaluation.\n\n**Evidence:** (consolidation_pneumonia_001, atelectasis_001)",
+  "critic_result": {
+    "supported": false,
+    "missing_evidence": [
+      "Pneumothorax is also a consideration, which may manifest as a visceral pleural line with associated lung retraction.",
+      "Borderline findings include possible pleural effusion and cardiomegaly."
+    ],
+    "safety_note": "The draft includes unsupported claims regarding pneumothorax, pleural effusion, and cardiomegaly."
+  },
+  "final_report": "**Findings:**  \nModel suggests possible consolidation or pneumonia, characterized by increased opacity in the lung fields. Atelectasis may represent a pattern of volume loss, potentially indicated by shifts in surrounding structures. Pneumothorax is also a consideration, which may manifest as a visceral pleural line with associated lung retraction. Borderline findings include possible pleural effusion and cardiomegaly.\n\n**Impression:**  \n- Possible consolidation or pneumonia, atelectasis, and pneumothorax.  \n- Borderline findings of pleural effusion and cardiomegaly may warrant further evaluation.\n\n**Evidence:** (consolidation_pneumonia_001, atelectasis_001)\n\nEducational prototype. Not a medical device, not a diagnosis. For research use only; consult a qualified radiologist."
+}
