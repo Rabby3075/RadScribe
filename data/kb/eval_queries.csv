@@ -1,0 +1,29 @@
+query_id,query,expected_finding,scope
+cardio_01,enlarged heart on chest x ray,Cardiomegaly,in_scope
+cardio_02,heart shadow is too large,Cardiomegaly,in_scope
+cardio_03,cardiothoracic ratio greater than fifty percent,Cardiomegaly,in_scope
+cardio_04,portable AP film makes the heart look enlarged,Cardiomegaly,in_scope
+atel_01,volume loss in part of the lung,Atelectasis,in_scope
+atel_02,collapsed air spaces with elevated diaphragm,Atelectasis,in_scope
+atel_03,linear opacity from subsegmental collapse,Atelectasis,in_scope
+atel_04,loss of air and reduced lung volume,Atelectasis,in_scope
+cons_01,air spaces filled with inflammatory material,Consolidation / Pneumonia,in_scope
+cons_02,pneumonia causing dense white opacity,Consolidation / Pneumonia,in_scope
+cons_03,air bronchograms inside an opacity,Consolidation / Pneumonia,in_scope
+cons_04,alveoli are filled instead of air filled,Consolidation / Pneumonia,in_scope
+eff_01,fluid around the lung,Pleural Effusion,in_scope
+eff_02,blunting of the costophrenic angle,Pleural Effusion,in_scope
+eff_03,meniscus sign at the lung base,Pleural Effusion,in_scope
+eff_04,extra fluid in the pleural space,Pleural Effusion,in_scope
+edema_01,fluid buildup inside the lungs,Edema,in_scope
+edema_02,bat wing opacities and Kerley B lines,Edema,in_scope
+edema_03,vascular redistribution with pulmonary edema,Edema,in_scope
+edema_04,heart failure causing lung fluid,Edema,in_scope
+ptx_01,air in the pleural space,Pneumothorax,in_scope
+ptx_02,visible pleural line with no lung markings beyond it,Pneumothorax,in_scope
+ptx_03,collapsed lung from air outside the lung,Pneumothorax,in_scope
+ptx_04,tension pneumothorax is an emergency,Pneumothorax,in_scope
+oos_01,broken rib fracture after trauma,Out of scope,out_of_scope
+oos_02,kidney stone seen on CT abdomen,Out of scope,out_of_scope
+oos_03,brain MRI shows stroke,Out of scope,out_of_scope
+oos_04,patient has a skin rash on the arm,Out of scope,out_of_scope

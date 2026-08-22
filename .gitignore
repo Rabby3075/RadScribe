@@ -27,3 +27,5 @@ data/*.csv
 # Model artifacts
 /models/
 outputs/vision/*.pt
+.env
+data/kb/chroma/
