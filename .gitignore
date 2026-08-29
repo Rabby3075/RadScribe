@@ -30,3 +30,4 @@ outputs/vision/*.pt
 .env
 data/kb/chroma/
 .vercel
+.env*
