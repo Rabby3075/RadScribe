@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 
@@ -8,7 +9,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 KB_DIR = PROJECT_ROOT / "data" / "kb"
 RAW_DIR = KB_DIR / "raw"
 PROCESSED_DIR = KB_DIR / "processed"
-INDEX_DIR = KB_DIR / "chroma"
+INDEX_DIR = Path(os.getenv("RADSCRIBE_CHROMA_DIR", KB_DIR / "chroma"))
 SOURCES_PATH = KB_DIR / "sources.csv"
 CHUNKS_PATH = PROCESSED_DIR / "chunks.parquet"
 EVAL_QUERIES_PATH = KB_DIR / "eval_queries.csv"

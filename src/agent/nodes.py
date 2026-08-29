@@ -21,7 +21,7 @@ RETRIEVAL_K = 3
 DRAFT_MODEL = "gpt-4o-mini"
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-TRACE_DIR = PROJECT_ROOT / "outputs" / "agent" / "traces"
+TRACE_DIR = Path(os.getenv("RADSCRIBE_TRACE_DIR", PROJECT_ROOT / "outputs" / "agent" / "traces"))
 DISCLAIMER = (
     "Educational prototype. Not a medical device, not a diagnosis. "
     "For research use only; consult a qualified radiologist."
