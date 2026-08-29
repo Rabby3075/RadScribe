@@ -3,12 +3,20 @@
   "installCommand": "pip install -r requirements-vercel.txt",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/",
       "destination": "/api/index.py"
+    },
+    {
+      "source": "/health",
+      "destination": "/api/health.py"
+    },
+    {
+      "source": "/analyze",
+      "destination": "/api/analyze.py"
     }
   ],
   "functions": {
-    "api/index.py": {
+    "api/*.py": {
       "maxDuration": 60,
       "excludeFiles": "{data,outputs,notebooks,src,.venv,.vercel,.git}/**"
     }
