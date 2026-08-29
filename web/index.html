@@ -204,6 +204,27 @@
       word-break: break-word;
     }
 
+    .preview {
+      display: none;
+      margin-top: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #1f2933;
+      aspect-ratio: 1 / 1;
+    }
+
+    .preview.show {
+      display: block;
+    }
+
+    .preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
     .results {
       min-height: 580px;
       overflow: hidden;
@@ -495,6 +516,9 @@
           </label>
           <input id="image-input" name="image" type="file" accept="image/*">
           <div class="file-name" id="file-name">No file selected</div>
+          <div class="preview" id="preview-box">
+            <img id="image-preview" alt="Selected image preview">
+          </div>
           <div class="actions">
             <button class="primary" id="analyze-button" type="submit">Analyze</button>
             <button class="secondary" id="clear-button" type="button">Clear</button>
@@ -538,6 +562,9 @@
     const loader = document.getElementById("loader");
     const dropZone = document.getElementById("drop-zone");
     const healthText = document.getElementById("health-text");
+    const previewBox = document.getElementById("preview-box");
+    const imagePreview = document.getElementById("image-preview");
+    let previewUrl = null;
 
     function setStatus(status) {
       statusPill.className = "status";
@@ -655,14 +682,31 @@
       resultBody.innerHTML = `<div class="error">${escapeHtml(message)}</div>`;
     }
 
-    input.addEventListener("change", () => {
-      const file = input.files[0];
+    function showPreview(file) {
+      if (previewUrl) {
+        URL.revokeObjectURL(previewUrl);
+        previewUrl = null;
+      }
+
       fileName.textContent = file ? file.name : "No file selected";
+      if (!file) {
+        imagePreview.removeAttribute("src");
+        previewBox.classList.remove("show");
+        return;
+      }
+
+      previewUrl = URL.createObjectURL(file);
+      imagePreview.src = previewUrl;
+      previewBox.classList.add("show");
+    }
+
+    input.addEventListener("change", () => {
+      showPreview(input.files[0]);
     });
 
     clearButton.addEventListener("click", () => {
       input.value = "";
-      fileName.textContent = "No file selected";
+      showPreview(null);
       setStatus("Ready");
       resultNote.textContent = "The output will appear here after analysis.";
       resultBody.innerHTML = `
@@ -695,7 +739,7 @@
         return;
       }
       input.files = event.dataTransfer.files;
-      fileName.textContent = file.name;
+      showPreview(file);
     });
 
     form.addEventListener("submit", async (event) => {
