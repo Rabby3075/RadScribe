@@ -1,0 +1,17 @@
+.git
+.venv
+.vercel
+__pycache__
+.pytest_cache
+.ipynb_checkpoints
+
+data
+outputs
+notebooks
+src
+
+*.pt
+*.pth
+*.onnx
+*.parquet
+*.pkl
