@@ -32,7 +32,7 @@ def empty_response(status: str, report: str) -> dict:
 
 
 async def proxy_analyze(image: UploadFile = File(...)) -> JSONResponse:
-    backend_url = os.getenv("RADSCRIBE_API_BASE_URL", "").rstrip("/")
+    backend_url = os.getenv("RADSCRIBE_API_BASE_URL", "").strip().rstrip("/")
 
     if not backend_url:
         return JSONResponse(
